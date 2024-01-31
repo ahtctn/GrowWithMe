@@ -9,31 +9,31 @@ import SwiftUI
 import Charts
 
 struct HomeView: View {
-    var viewModel = PhysicalDataViewModel()
+    @ObservedObject var viewModel = PhysicalDataViewModel()
     var body: some View {
         NavigationStack {
             List {
                 MyChildView()
                 
-                Section("Height- Weight") {
+                Section("Weight") {
                     Chart {
-                        ForEach(PhysicalDataViewModel.data) { data in
-                            BarMark(x: PlottableValue.value("Height", data.height), y: .value("Weight", data.weight))
-                                
+                        ForEach(viewModel.data) { data in
+                            BarMark(x: PlottableValue.value("Height", "\(data.weight) kg"), y: .value("Weight", data.date))
                         }
                     }
                     .padding()
                     
                 }
                 
-                Section("Reminder") {
-                    Text("Reminder")
-                    Text("Reminder")
-                    Text("Reminder")
-                    Text("Reminder")
-                }
-                
-            }
+                Section("Length") {
+                    Chart {
+                        ForEach(viewModel.data) { data in
+                            BarMark(x: PlottableValue.value("Length", "\(data.length) m"), y: .value("Date", data.date))
+                        }
+                    }
+                    .padding()
+                    
+                }            }
             
             .navigationTitle("Home")
         }

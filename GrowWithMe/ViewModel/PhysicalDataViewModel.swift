@@ -7,12 +7,14 @@
 
 import Foundation
 
-class PhysicalDataViewModel {
-    static let data = [
-        PhysicalDataModel(weight: 4, height: 0.5),
-        PhysicalDataModel(weight: 4.2, height: 0.52),
-        PhysicalDataModel(weight: 4.6, height: 0.59),
-        PhysicalDataModel(weight: 5, height: 0.62),
-        PhysicalDataModel(weight: 6.2, height: 0.7)
+class PhysicalDataViewModel: ObservableObject {
+    @Published var data = [
+        PhysicalDataModel(weight: 4, length: 0.5, date: Date()),
+        PhysicalDataModel(weight: 4.2, length: 0.52, date: Date().addingTimeInterval(86400 * 5)),
+        PhysicalDataModel(weight: 4.6, length: 0.59, date: Date().addingTimeInterval(86400 * 10)),
+        PhysicalDataModel(weight: 5, length: 0.62, date: Date().addingTimeInterval(86400 * 15)),
+        PhysicalDataModel(weight: 5.5, length: 0.7, date: Date().addingTimeInterval(86400 * 20)),
+        PhysicalDataModel(weight: 6.2, length: 1.7, date: Date().addingTimeInterval(86400 * 25)),
+        
     ]
 }

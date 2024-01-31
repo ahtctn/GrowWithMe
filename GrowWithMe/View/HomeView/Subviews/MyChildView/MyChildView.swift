@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MyChildView: View {
+    @ObservedObject var viewModel: PhysicalDataViewModel = PhysicalDataViewModel()
     var body: some View {
         Section("My Child") {
             HStack(spacing: 10) {
@@ -25,7 +26,7 @@ struct MyChildView: View {
                     Text("12 months")
                         .foregroundStyle(.secondary)
                     HStack {
-                        Text("6.2 kg")
+                        Text("6kg")
                         Text("73 cm")
                     }
                     

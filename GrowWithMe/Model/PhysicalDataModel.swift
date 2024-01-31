@@ -10,7 +10,8 @@ import Foundation
 struct PhysicalDataModel: Identifiable {
     var id = UUID().uuidString
     var weight: Double
-    var height: Double
+    var length: Double
+    var date: Date
 }
 
 ///Initial Commit
