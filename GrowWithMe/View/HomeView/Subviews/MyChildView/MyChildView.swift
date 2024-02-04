@@ -21,12 +21,21 @@ struct MyChildView: View {
                 
                 VStack(alignment: .leading, spacing: 10) {
                     Text("Prenses Ela")
-                        .font(.title2)
-                        .fontWeight(.bold)
-                    Text("12 months")
-                        .foregroundStyle(.secondary)
+                        .font(Row.name.textStyle)
+                    HStack(spacing: 8) {
+                        Row.age.imageName
+                            .foregroundStyle(Row.age.fontColor)
+                        Text("12 months")
+                            .foregroundStyle(.secondary)
+                    }
+                    
                     HStack {
+                        Row.length.imageName
+                            .foregroundStyle(Row.length.fontColor)
                         Text("6kg")
+                            .padding(2)
+                        Row.weight.imageName
+                            .foregroundStyle(Row.weight.fontColor)
                         Text("73 cm")
                     }
                     
@@ -35,7 +44,7 @@ struct MyChildView: View {
                     } label: {
                         Text("Click to see the details")
                             .underline()
-                            .font(.footnote)
+                            .font(Row.detail.textStyle)
                     }
                 }
             }
@@ -45,4 +54,40 @@ struct MyChildView: View {
 
 #Preview {
     MyChildView()
+}
+
+extension MyChildView {
+    enum Row: Hashable {
+        case name
+        case age
+        case weight
+        case length
+        case detail
+        
+        var imageName: Image? {
+            switch self {
+            case .age:
+                return Image(systemName: "gift.fill")
+            case .weight:
+                return Image(systemName: "scalemass.fill")
+            case .length:
+                return Image(systemName: "ruler")
+            default: return nil
+            }
+        }
+        
+        var textStyle: Font {
+            switch self {
+            case .name:
+                return .title2.bold()
+            case .detail:
+                return .footnote
+            default: return .subheadline
+            }
+        }
+        
+        var fontColor: Color {
+            return .orange
+        }
+    }
 }

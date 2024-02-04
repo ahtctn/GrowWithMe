@@ -17,14 +17,27 @@ struct RemindersCellView: View {
         HStack {
             VStack(alignment: .leading) {
                 Text(title)
-                    .font(.title3)
+                    .font(Row.title.textStyle)
                     .bold()
+                HStack(spacing: 8) {
+                    Image(systemName: Row.subtitle.imageName!)
+                        .foregroundStyle(.orange)
+                    Text(subtitle)
+                }
                 
-                Text(subtitle)
-                Text(date)
-                    .font(.subheadline)
-                Text(note)
-                    .font(.footnote)
+                HStack(spacing: 8) {
+                    Image(systemName: Row.date.imageName!)
+                        .foregroundStyle(.orange)
+                    Text(date)
+                        .font(Row.date.textStyle)
+                }
+                HStack(spacing: 8) {
+                    Image(systemName: Row.note.imageName!)
+                        .foregroundStyle(.orange)
+                    Text(note)
+                        .font(Row.note.textStyle)
+                }
+                
             }
             Spacer()
             CheckboxView(isChecked: $isChecked)
@@ -34,4 +47,37 @@ struct RemindersCellView: View {
 
 #Preview {
     RemindersCellView(title: "Title", subtitle: "Subtitle", date: "01.02.2025", note: "Note Note", isChecked: .constant(true))
+}
+
+extension RemindersCellView {
+    enum Row: Hashable {
+        case title
+        case subtitle
+        case date
+        case note
+        
+        var imageName: String? {
+            switch self {
+            case .subtitle:
+                return "pencil.circle"
+            case .date:
+                return "calendar.badge.plus"
+            case .note:
+                return "note.text"
+            default: return nil
+            }
+        }
+        
+        var textStyle: Font {
+            switch self {
+            case .title:
+                return .title3
+            case .date:
+                return .subheadline
+            case .note:
+                return .footnote
+            default: return .subheadline
+            }
+        }
+    }
 }
