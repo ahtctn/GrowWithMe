@@ -18,6 +18,16 @@
 		7B3141FE2B692A1400993468 /* MyChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3141FD2B692A1400993468 /* MyChildView.swift */; };
 		7B3142002B692D1100993468 /* PhysicalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3141FF2B692D1100993468 /* PhysicalDataModel.swift */; };
 		7B3142022B692D4100993468 /* PhysicalDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3142012B692D4100993468 /* PhysicalDataViewModel.swift */; };
+		7BC8A03F2B6FBDE600F420D9 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8A03E2B6FBDE600F420D9 /* DateFormatter+Extension.swift */; };
+		7BC8A0422B6FBED600F420D9 /* ReminderDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8A0412B6FBED600F420D9 /* ReminderDataViewModel.swift */; };
+		7BC8A0442B6FBEEF00F420D9 /* ReminderDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8A0432B6FBEEF00F420D9 /* ReminderDataModel.swift */; };
+		7BC8A0472B6FC0B200F420D9 /* ReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8A0462B6FC0B200F420D9 /* ReminderView.swift */; };
+		7BC8A0492B6FC0ED00F420D9 /* CheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8A0482B6FC0ED00F420D9 /* CheckboxView.swift */; };
+		7BD5A2CA2B6FC2C800F2B1BF /* RemindersCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5A2C92B6FC2C800F2B1BF /* RemindersCellView.swift */; };
+		7BD5A2CC2B6FC4A700F2B1BF /* SpecialMomentsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5A2CB2B6FC4A700F2B1BF /* SpecialMomentsDataModel.swift */; };
+		7BD5A2CE2B6FC4E700F2B1BF /* SpecialMomentsDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5A2CD2B6FC4E700F2B1BF /* SpecialMomentsDataViewModel.swift */; };
+		7BD5A2D12B6FC8F000F2B1BF /* SpecialMomentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5A2D02B6FC8F000F2B1BF /* SpecialMomentsView.swift */; };
+		7BD5A2D32B6FC94E00F2B1BF /* SpecialMomentsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5A2D22B6FC94E00F2B1BF /* SpecialMomentsCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +43,16 @@
 		7B3141FD2B692A1400993468 /* MyChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChildView.swift; sourceTree = "<group>"; };
 		7B3141FF2B692D1100993468 /* PhysicalDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalDataModel.swift; sourceTree = "<group>"; };
 		7B3142012B692D4100993468 /* PhysicalDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalDataViewModel.swift; sourceTree = "<group>"; };
+		7BC8A03E2B6FBDE600F420D9 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		7BC8A0412B6FBED600F420D9 /* ReminderDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDataViewModel.swift; sourceTree = "<group>"; };
+		7BC8A0432B6FBEEF00F420D9 /* ReminderDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDataModel.swift; sourceTree = "<group>"; };
+		7BC8A0462B6FC0B200F420D9 /* ReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderView.swift; sourceTree = "<group>"; };
+		7BC8A0482B6FC0ED00F420D9 /* CheckboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxView.swift; sourceTree = "<group>"; };
+		7BD5A2C92B6FC2C800F2B1BF /* RemindersCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersCellView.swift; sourceTree = "<group>"; };
+		7BD5A2CB2B6FC4A700F2B1BF /* SpecialMomentsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialMomentsDataModel.swift; sourceTree = "<group>"; };
+		7BD5A2CD2B6FC4E700F2B1BF /* SpecialMomentsDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialMomentsDataViewModel.swift; sourceTree = "<group>"; };
+		7BD5A2D02B6FC8F000F2B1BF /* SpecialMomentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialMomentsView.swift; sourceTree = "<group>"; };
+		7BD5A2D22B6FC94E00F2B1BF /* SpecialMomentsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialMomentsCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +85,7 @@
 		7B3141D92B691C7A00993468 /* GrowWithMe */ = {
 			isa = PBXGroup;
 			children = (
+				7BC8A03D2B6FBDD400F420D9 /* Helpers */,
 				7B3141EB2B691C8E00993468 /* Model */,
 				7B3141EA2B691C8B00993468 /* ViewModel */,
 				7B3141E92B691C8700993468 /* View */,
@@ -107,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				7B3142012B692D4100993468 /* PhysicalDataViewModel.swift */,
+				7BC8A0412B6FBED600F420D9 /* ReminderDataViewModel.swift */,
+				7BD5A2CD2B6FC4E700F2B1BF /* SpecialMomentsDataViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -115,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				7B3141FF2B692D1100993468 /* PhysicalDataModel.swift */,
+				7BC8A0432B6FBEEF00F420D9 /* ReminderDataModel.swift */,
+				7BD5A2CB2B6FC4A700F2B1BF /* SpecialMomentsDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -155,6 +180,8 @@
 		7B3141FB2B692A0500993468 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
+				7BD5A2CF2B6FC8DB00F2B1BF /* SpecialMomentsView */,
+				7BC8A0452B6FC0A700F420D9 /* ReminderCellView */,
 				7B3141FC2B692A0900993468 /* MyChildView */,
 			);
 			path = Subviews;
@@ -166,6 +193,33 @@
 				7B3141FD2B692A1400993468 /* MyChildView.swift */,
 			);
 			path = MyChildView;
+			sourceTree = "<group>";
+		};
+		7BC8A03D2B6FBDD400F420D9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7BC8A03E2B6FBDE600F420D9 /* DateFormatter+Extension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7BC8A0452B6FC0A700F420D9 /* ReminderCellView */ = {
+			isa = PBXGroup;
+			children = (
+				7BC8A0462B6FC0B200F420D9 /* ReminderView.swift */,
+				7BD5A2C92B6FC2C800F2B1BF /* RemindersCellView.swift */,
+				7BC8A0482B6FC0ED00F420D9 /* CheckboxView.swift */,
+			);
+			path = ReminderCellView;
+			sourceTree = "<group>";
+		};
+		7BD5A2CF2B6FC8DB00F2B1BF /* SpecialMomentsView */ = {
+			isa = PBXGroup;
+			children = (
+				7BD5A2D02B6FC8F000F2B1BF /* SpecialMomentsView.swift */,
+				7BD5A2D22B6FC94E00F2B1BF /* SpecialMomentsCellView.swift */,
+			);
+			path = SpecialMomentsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,13 +294,23 @@
 			files = (
 				7B3142022B692D4100993468 /* PhysicalDataViewModel.swift in Sources */,
 				7B3141FE2B692A1400993468 /* MyChildView.swift in Sources */,
+				7BD5A2CA2B6FC2C800F2B1BF /* RemindersCellView.swift in Sources */,
 				7B3141FA2B6924B500993468 /* StoryView.swift in Sources */,
+				7BD5A2D12B6FC8F000F2B1BF /* SpecialMomentsView.swift in Sources */,
 				7B3142002B692D1100993468 /* PhysicalDataModel.swift in Sources */,
+				7BD5A2D32B6FC94E00F2B1BF /* SpecialMomentsCellView.swift in Sources */,
 				7B3141F72B69212000993468 /* SettingsView.swift in Sources */,
 				7B3141F42B69211300993468 /* StatsView.swift in Sources */,
+				7BD5A2CC2B6FC4A700F2B1BF /* SpecialMomentsDataModel.swift in Sources */,
+				7BC8A0472B6FC0B200F420D9 /* ReminderView.swift in Sources */,
+				7BC8A0422B6FBED600F420D9 /* ReminderDataViewModel.swift in Sources */,
+				7BD5A2CE2B6FC4E700F2B1BF /* SpecialMomentsDataViewModel.swift in Sources */,
 				7B3141F12B69210100993468 /* HomeView.swift in Sources */,
 				7B3141DD2B691C7A00993468 /* TabBarView.swift in Sources */,
+				7BC8A03F2B6FBDE600F420D9 /* DateFormatter+Extension.swift in Sources */,
+				7BC8A0492B6FC0ED00F420D9 /* CheckboxView.swift in Sources */,
 				7B3141DB2B691C7A00993468 /* GrowWithMeApp.swift in Sources */,
+				7BC8A0442B6FBEEF00F420D9 /* ReminderDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

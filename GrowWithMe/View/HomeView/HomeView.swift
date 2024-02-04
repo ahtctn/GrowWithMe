@@ -9,31 +9,19 @@ import SwiftUI
 import Charts
 
 struct HomeView: View {
-    @ObservedObject var viewModel = PhysicalDataViewModel()
+    @ObservedObject var physicalDataVM = PhysicalDataViewModel()
+    @ObservedObject var specialMomentsDataVM = SpecialMomentsDataViewModel()
+    
+    @State private var isChecked: Bool = false
+    
     var body: some View {
         NavigationStack {
             List {
                 MyChildView()
+                ReminderView()
+                SpecialMomentsView()
                 
-                Section("Weight") {
-                    Chart {
-                        ForEach(viewModel.data) { data in
-                            BarMark(x: PlottableValue.value("Height", "\(data.weight) kg"), y: .value("Weight", data.date))
-                        }
-                    }
-                    .padding()
-                    
-                }
-                
-                Section("Length") {
-                    Chart {
-                        ForEach(viewModel.data) { data in
-                            BarMark(x: PlottableValue.value("Length", "\(data.length) m"), y: .value("Date", data.date))
-                        }
-                    }
-                    .padding()
-                    
-                }            }
+            }
             
             .navigationTitle("Home")
         }
@@ -43,3 +31,5 @@ struct HomeView: View {
 #Preview {
     HomeView()
 }
+
+

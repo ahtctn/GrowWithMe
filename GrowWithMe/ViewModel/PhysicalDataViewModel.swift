@@ -18,3 +18,4 @@ class PhysicalDataViewModel: ObservableObject {
         
     ]
 }
+
