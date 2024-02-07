@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ReminderDataModel: Identifiable {
+struct ReminderDataModel: Identifiable, Codable {
     var id = UUID().uuidString
     var title: String
     var subtitle: String

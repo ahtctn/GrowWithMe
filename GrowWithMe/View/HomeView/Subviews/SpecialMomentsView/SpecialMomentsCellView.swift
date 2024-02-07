@@ -8,67 +8,60 @@
 import SwiftUI
 
 struct SpecialMomentsCellView: View {
-    @ObservedObject var specialMomentsDataVM = SpecialMomentsDataViewModel()
+    var title: String
+    var subtitle: String
+    var image: Image
+    var date: Date
+    
     var body: some View {
-        ScrollView(.horizontal) {
-            
-            LazyHGrid(rows: [GridItem(.flexible())], spacing: 8) {
-                ForEach(specialMomentsDataVM.data) { data in
-                    VStack(spacing: 8) {
-                        data.image
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 150, height: 150)
-                            .cornerRadius(15)
-                        HStack(spacing: 8) {
-                            Image(systemName: "heart.text.square.fill")
-                                .foregroundStyle(Row.symbol.color)
-                            Text(data.title)
-                                .font(Row.title.textStyle)
-                        }
-                        HStack(spacing: 8) {
-                            Text(data.subtitle.prefix(20))
-                                .font(.footnote)
-                                .lineLimit(3)
-                            
-                        }
-                        
-                        
-                    }
-                    
-                    .frame(maxWidth: 150)
-                    //.frame(maxHeight: calculateCellHeight())
-                    
-                }
+        VStack(spacing: 8) {
+            image
+                .resizable()
+                .scaledToFill()
+                .frame(width: 150, height: 150)
+                .cornerRadius(15)
+            HStack(spacing: 8) {
+                Image(systemName: "heart.text.square.fill")
+                    .foregroundStyle(Row.symbol.color)
+                Text(title)
+                    .font(Row.title.textStyle)
             }
-            .padding()
+            HStack(spacing: 8) {
+                Text(subtitle.prefix(25))
+                    .font(.footnote)
+                    .lineLimit(3)
+                
+            }
+            let dateString = DateFormatter.customDateFormatter.string(from: date)
+            Text(dateString)
+                .font(Row.date.textStyle)
+            
         }
+        
+        .frame(maxWidth: 150)
+        
         
     }
     
-    private func calculateCellHeight() -> CGFloat {
-        // Burada, subtitle'ın içeriğine bağlı olarak hücre yüksekliğini dinamik olarak hesaplayabilirsiniz.
-        // İstediğiniz koşullara göre bu hesaplamayı ayarlayabilirsiniz.
-        // Örneğin, metnin uzunluğuna bağlı olarak farklı bir hesaplama yapabilirsiniz.
-        // Şu anda sabit bir değer döndürüyorum, bu değeri ihtiyacınıza göre ayarlayabilirsiniz.
-        return 350
-    }
-
+    
 }
 
 #Preview {
-    SpecialMomentsCellView()
+    SpecialMomentsCellView(title: "Title", subtitle: "subtitle subtile subtitle", image: Image(systemName: "photo.fill"), date: Date.now)
 }
 
 extension SpecialMomentsCellView {
     enum Row: Hashable {
         case title
         case symbol
+        case date
         
         var textStyle: Font? {
             switch self {
             case .title:
-                return .title2.bold()
+                return .subheadline.bold()
+            case .date:
+                return .footnote
             default: return nil
             }
         }

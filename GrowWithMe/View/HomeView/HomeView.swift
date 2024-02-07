@@ -19,7 +19,9 @@ struct HomeView: View {
             List {
                 MyChildView()
                 ReminderView()
+                    .environmentObject(ReminderDataViewModel())
                 SpecialMomentsView()
+                    .environmentObject(SpecialMomentsDataViewModel())
                 
             }
             

@@ -18,6 +18,9 @@
 		7B3141FE2B692A1400993468 /* MyChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3141FD2B692A1400993468 /* MyChildView.swift */; };
 		7B3142002B692D1100993468 /* PhysicalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3141FF2B692D1100993468 /* PhysicalDataModel.swift */; };
 		7B3142022B692D4100993468 /* PhysicalDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3142012B692D4100993468 /* PhysicalDataViewModel.swift */; };
+		7B5C96C42B73BC09005B125C /* AddSpecialMomentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C96C32B73BC09005B125C /* AddSpecialMomentView.swift */; };
+		7B5C96C62B73DDA9005B125C /* SpecialMomentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C96C52B73DDA9005B125C /* SpecialMomentDetailView.swift */; };
+		7B9318842B710B7400DFC9C3 /* AddReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9318832B710B7400DFC9C3 /* AddReminderView.swift */; };
 		7BC8A03F2B6FBDE600F420D9 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8A03E2B6FBDE600F420D9 /* DateFormatter+Extension.swift */; };
 		7BC8A0422B6FBED600F420D9 /* ReminderDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8A0412B6FBED600F420D9 /* ReminderDataViewModel.swift */; };
 		7BC8A0442B6FBEEF00F420D9 /* ReminderDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8A0432B6FBEEF00F420D9 /* ReminderDataModel.swift */; };
@@ -43,6 +46,9 @@
 		7B3141FD2B692A1400993468 /* MyChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChildView.swift; sourceTree = "<group>"; };
 		7B3141FF2B692D1100993468 /* PhysicalDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalDataModel.swift; sourceTree = "<group>"; };
 		7B3142012B692D4100993468 /* PhysicalDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalDataViewModel.swift; sourceTree = "<group>"; };
+		7B5C96C32B73BC09005B125C /* AddSpecialMomentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpecialMomentView.swift; sourceTree = "<group>"; };
+		7B5C96C52B73DDA9005B125C /* SpecialMomentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialMomentDetailView.swift; sourceTree = "<group>"; };
+		7B9318832B710B7400DFC9C3 /* AddReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderView.swift; sourceTree = "<group>"; };
 		7BC8A03E2B6FBDE600F420D9 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 		7BC8A0412B6FBED600F420D9 /* ReminderDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDataViewModel.swift; sourceTree = "<group>"; };
 		7BC8A0432B6FBEEF00F420D9 /* ReminderDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDataModel.swift; sourceTree = "<group>"; };
@@ -209,6 +215,8 @@
 				7BC8A0462B6FC0B200F420D9 /* ReminderView.swift */,
 				7BD5A2C92B6FC2C800F2B1BF /* RemindersCellView.swift */,
 				7BC8A0482B6FC0ED00F420D9 /* CheckboxView.swift */,
+				7B9318832B710B7400DFC9C3 /* AddReminderView.swift */,
+				7B5C96C32B73BC09005B125C /* AddSpecialMomentView.swift */,
 			);
 			path = ReminderCellView;
 			sourceTree = "<group>";
@@ -218,6 +226,7 @@
 			children = (
 				7BD5A2D02B6FC8F000F2B1BF /* SpecialMomentsView.swift */,
 				7BD5A2D22B6FC94E00F2B1BF /* SpecialMomentsCellView.swift */,
+				7B5C96C52B73DDA9005B125C /* SpecialMomentDetailView.swift */,
 			);
 			path = SpecialMomentsView;
 			sourceTree = "<group>";
@@ -296,8 +305,10 @@
 				7B3141FE2B692A1400993468 /* MyChildView.swift in Sources */,
 				7BD5A2CA2B6FC2C800F2B1BF /* RemindersCellView.swift in Sources */,
 				7B3141FA2B6924B500993468 /* StoryView.swift in Sources */,
+				7B5C96C42B73BC09005B125C /* AddSpecialMomentView.swift in Sources */,
 				7BD5A2D12B6FC8F000F2B1BF /* SpecialMomentsView.swift in Sources */,
 				7B3142002B692D1100993468 /* PhysicalDataModel.swift in Sources */,
+				7B5C96C62B73DDA9005B125C /* SpecialMomentDetailView.swift in Sources */,
 				7BD5A2D32B6FC94E00F2B1BF /* SpecialMomentsCellView.swift in Sources */,
 				7B3141F72B69212000993468 /* SettingsView.swift in Sources */,
 				7B3141F42B69211300993468 /* StatsView.swift in Sources */,
@@ -310,6 +321,7 @@
 				7BC8A03F2B6FBDE600F420D9 /* DateFormatter+Extension.swift in Sources */,
 				7BC8A0492B6FC0ED00F420D9 /* CheckboxView.swift in Sources */,
 				7B3141DB2B691C7A00993468 /* GrowWithMeApp.swift in Sources */,
+				7B9318842B710B7400DFC9C3 /* AddReminderView.swift in Sources */,
 				7BC8A0442B6FBEEF00F420D9 /* ReminderDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
