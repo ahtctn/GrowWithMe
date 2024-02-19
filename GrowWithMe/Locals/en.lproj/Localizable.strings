@@ -5,3 +5,17 @@
   Created by Ahmet Ali ÇETİN on 17.02.2024.
   
 */
+
+/*Paywall View*/
+"get_unlimited_access" = "Get unlimited access.";
+"first_advantage" = "Right to add unlimited reminders";
+"second_advantage" = "Height and weight tracking charts";
+"third_advantage" = "Unlimited right to add special moments.";
+"fourth_advantage" = "Rich audio story library.";
+"weekly" = "Weekly";
+"monthly" = "Monthly";
+"yearly" = "Yearly";
+"continue" = "Continue";
+"privacy_policy" = "Privacy policy";
+"restore" = "Restore";
+"terms_of_use" = "Terms of use";

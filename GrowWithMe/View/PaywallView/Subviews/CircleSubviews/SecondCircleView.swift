@@ -9,7 +9,24 @@ import SwiftUI
 
 struct SecondCircleView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(alignment: .bottom, spacing: 10) {
+            Circle()
+                .frame(width: 100, height: 100, alignment: .center)
+                .foregroundStyle(.yellow)
+                .opacity(0.2)
+            
+            Circle()
+                .frame(width: 140, height: 140)
+                .foregroundStyle(.orange)
+                .opacity(0.16)
+            
+            Circle()
+                .foregroundStyle(.orange)
+                .frame(width: 60, height: 60, alignment: .center)
+                
+                .opacity(0.4)
+        }
+        .frame(height: 170)
     }
 }
 

@@ -20,12 +20,33 @@
 		7B3142022B692D4100993468 /* PhysicalDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3142012B692D4100993468 /* PhysicalDataViewModel.swift */; };
 		7B5C96C42B73BC09005B125C /* AddSpecialMomentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C96C32B73BC09005B125C /* AddSpecialMomentView.swift */; };
 		7B5C96C62B73DDA9005B125C /* SpecialMomentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C96C52B73DDA9005B125C /* SpecialMomentDetailView.swift */; };
+		7B5DF45D2B81305000C69973 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B5DF45F2B81305000C69973 /* Localizable.strings */; };
+		7B5DF4662B81318100C69973 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5DF4652B81318100C69973 /* StringExtension.swift */; };
+		7B5DF4682B81371400C69973 /* baby.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B5DF4672B81371400C69973 /* baby.json */; };
 		7B9318842B710B7400DFC9C3 /* AddReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9318832B710B7400DFC9C3 /* AddReminderView.swift */; };
 		7BC8A03F2B6FBDE600F420D9 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8A03E2B6FBDE600F420D9 /* DateFormatter+Extension.swift */; };
 		7BC8A0422B6FBED600F420D9 /* ReminderDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8A0412B6FBED600F420D9 /* ReminderDataViewModel.swift */; };
 		7BC8A0442B6FBEEF00F420D9 /* ReminderDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8A0432B6FBEEF00F420D9 /* ReminderDataModel.swift */; };
 		7BC8A0472B6FC0B200F420D9 /* ReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8A0462B6FC0B200F420D9 /* ReminderView.swift */; };
 		7BC8A0492B6FC0ED00F420D9 /* CheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8A0482B6FC0ED00F420D9 /* CheckboxView.swift */; };
+		7BCCFCDC2B837366000340DF /* AdvantagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCFCDB2B837366000340DF /* AdvantagesView.swift */; };
+		7BCCFCDF2B837391000340DF /* PaywallPaymentMethodWantedMost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCFCDE2B837391000340DF /* PaywallPaymentMethodWantedMost.swift */; };
+		7BCCFCE12B8373BD000340DF /* PaywallPaymentMethodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCFCE02B8373BD000340DF /* PaywallPaymentMethodView.swift */; };
+		7BCCFCE32B8373DA000340DF /* PaywallContinueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCFCE22B8373DA000340DF /* PaywallContinueButton.swift */; };
+		7BCCFCE52B8373F1000340DF /* PaywallTermsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCFCE42B8373F1000340DF /* PaywallTermsButton.swift */; };
+		7BCCFCE72B837493000340DF /* AllPaywallPaymentsMethodsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCFCE62B837493000340DF /* AllPaywallPaymentsMethodsView.swift */; };
+		7BCCFCE92B8374BA000340DF /* AllAdvantagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCFCE82B8374BA000340DF /* AllAdvantagesView.swift */; };
+		7BCCFCEB2B83752E000340DF /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCFCEA2B83752E000340DF /* AnimationView.swift */; };
+		7BCCFCEE2B837831000340DF /* FirstCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCFCED2B837831000340DF /* FirstCircleView.swift */; };
+		7BCCFCF02B837842000340DF /* SecondCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCFCEF2B837842000340DF /* SecondCircleView.swift */; };
+		7BCCFCF22B837856000340DF /* ThirdCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCFCF12B837856000340DF /* ThirdCircleView.swift */; };
+		7BCCFCF42B837FAD000340DF /* MyChildDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCFCF32B837FAD000340DF /* MyChildDataModel.swift */; };
+		7BCCFCF62B838137000340DF /* MyChildViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCFCF52B838137000340DF /* MyChildViewModel.swift */; };
+		7BCCFCF82B8394ED000340DF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCFCF72B8394ED000340DF /* ImagePicker.swift */; };
+		7BCCFCFB2B839534000340DF /* AddChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCFCFA2B839534000340DF /* AddChildView.swift */; };
+		7BD1D8312B7502A000074008 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 7BD1D8302B7502A000074008 /* Lottie */; };
+		7BD1D8342B7502B100074008 /* LottieAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD1D8332B7502B100074008 /* LottieAnimationView.swift */; };
+		7BD1D8372B75032F00074008 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD1D8362B75032F00074008 /* PaywallView.swift */; };
 		7BD5A2CA2B6FC2C800F2B1BF /* RemindersCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5A2C92B6FC2C800F2B1BF /* RemindersCellView.swift */; };
 		7BD5A2CC2B6FC4A700F2B1BF /* SpecialMomentsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5A2CB2B6FC4A700F2B1BF /* SpecialMomentsDataModel.swift */; };
 		7BD5A2CE2B6FC4E700F2B1BF /* SpecialMomentsDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5A2CD2B6FC4E700F2B1BF /* SpecialMomentsDataViewModel.swift */; };
@@ -48,12 +69,37 @@
 		7B3142012B692D4100993468 /* PhysicalDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalDataViewModel.swift; sourceTree = "<group>"; };
 		7B5C96C32B73BC09005B125C /* AddSpecialMomentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpecialMomentView.swift; sourceTree = "<group>"; };
 		7B5C96C52B73DDA9005B125C /* SpecialMomentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialMomentDetailView.swift; sourceTree = "<group>"; };
+		7B5DF45E2B81305000C69973 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7B5DF4602B81307200C69973 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7B5DF4612B81307500C69973 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7B5DF4622B81307600C69973 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		7B5DF4632B81307700C69973 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7B5DF4642B81307800C69973 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7B5DF4652B81318100C69973 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		7B5DF4672B81371400C69973 /* baby.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = baby.json; sourceTree = "<group>"; };
 		7B9318832B710B7400DFC9C3 /* AddReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderView.swift; sourceTree = "<group>"; };
 		7BC8A03E2B6FBDE600F420D9 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 		7BC8A0412B6FBED600F420D9 /* ReminderDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDataViewModel.swift; sourceTree = "<group>"; };
 		7BC8A0432B6FBEEF00F420D9 /* ReminderDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDataModel.swift; sourceTree = "<group>"; };
 		7BC8A0462B6FC0B200F420D9 /* ReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderView.swift; sourceTree = "<group>"; };
 		7BC8A0482B6FC0ED00F420D9 /* CheckboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxView.swift; sourceTree = "<group>"; };
+		7BCCFCDB2B837366000340DF /* AdvantagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvantagesView.swift; sourceTree = "<group>"; };
+		7BCCFCDE2B837391000340DF /* PaywallPaymentMethodWantedMost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallPaymentMethodWantedMost.swift; sourceTree = "<group>"; };
+		7BCCFCE02B8373BD000340DF /* PaywallPaymentMethodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallPaymentMethodView.swift; sourceTree = "<group>"; };
+		7BCCFCE22B8373DA000340DF /* PaywallContinueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallContinueButton.swift; sourceTree = "<group>"; };
+		7BCCFCE42B8373F1000340DF /* PaywallTermsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallTermsButton.swift; sourceTree = "<group>"; };
+		7BCCFCE62B837493000340DF /* AllPaywallPaymentsMethodsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPaywallPaymentsMethodsView.swift; sourceTree = "<group>"; };
+		7BCCFCE82B8374BA000340DF /* AllAdvantagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAdvantagesView.swift; sourceTree = "<group>"; };
+		7BCCFCEA2B83752E000340DF /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
+		7BCCFCED2B837831000340DF /* FirstCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCircleView.swift; sourceTree = "<group>"; };
+		7BCCFCEF2B837842000340DF /* SecondCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCircleView.swift; sourceTree = "<group>"; };
+		7BCCFCF12B837856000340DF /* ThirdCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCircleView.swift; sourceTree = "<group>"; };
+		7BCCFCF32B837FAD000340DF /* MyChildDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChildDataModel.swift; sourceTree = "<group>"; };
+		7BCCFCF52B838137000340DF /* MyChildViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChildViewModel.swift; sourceTree = "<group>"; };
+		7BCCFCF72B8394ED000340DF /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		7BCCFCFA2B839534000340DF /* AddChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChildView.swift; sourceTree = "<group>"; };
+		7BD1D8332B7502B100074008 /* LottieAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimationView.swift; sourceTree = "<group>"; };
+		7BD1D8362B75032F00074008 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
 		7BD5A2C92B6FC2C800F2B1BF /* RemindersCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersCellView.swift; sourceTree = "<group>"; };
 		7BD5A2CB2B6FC4A700F2B1BF /* SpecialMomentsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialMomentsDataModel.swift; sourceTree = "<group>"; };
 		7BD5A2CD2B6FC4E700F2B1BF /* SpecialMomentsDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialMomentsDataViewModel.swift; sourceTree = "<group>"; };
@@ -66,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BD1D8312B7502A000074008 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,11 +138,13 @@
 		7B3141D92B691C7A00993468 /* GrowWithMe */ = {
 			isa = PBXGroup;
 			children = (
+				7B5DF45A2B812FF600C69973 /* Locals */,
 				7BC8A03D2B6FBDD400F420D9 /* Helpers */,
 				7B3141EB2B691C8E00993468 /* Model */,
 				7B3141EA2B691C8B00993468 /* ViewModel */,
 				7B3141E92B691C8700993468 /* View */,
 				7B3141E82B691C8200993468 /* App */,
+				7BD1D8382B75033B00074008 /* JSONLottieAnimations */,
 				7B3141DE2B691C7C00993468 /* Assets.xcassets */,
 				7B3141E02B691C7C00993468 /* Preview Content */,
 			);
@@ -121,6 +170,8 @@
 		7B3141E92B691C8700993468 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7BD1D8352B75032600074008 /* PaywallView */,
+				7BD1D8322B7502A500074008 /* Lottie */,
 				7B3141EE2B6920ED00993468 /* StatsView */,
 				7B3141EC2B6920E400993468 /* HomeView */,
 				7B3141F82B6924A900993468 /* StoryView */,
@@ -136,6 +187,7 @@
 				7B3142012B692D4100993468 /* PhysicalDataViewModel.swift */,
 				7BC8A0412B6FBED600F420D9 /* ReminderDataViewModel.swift */,
 				7BD5A2CD2B6FC4E700F2B1BF /* SpecialMomentsDataViewModel.swift */,
+				7BCCFCF52B838137000340DF /* MyChildViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -146,6 +198,7 @@
 				7B3141FF2B692D1100993468 /* PhysicalDataModel.swift */,
 				7BC8A0432B6FBEEF00F420D9 /* ReminderDataModel.swift */,
 				7BD5A2CB2B6FC4A700F2B1BF /* SpecialMomentsDataModel.swift */,
+				7BCCFCF32B837FAD000340DF /* MyChildDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -196,15 +249,26 @@
 		7B3141FC2B692A0900993468 /* MyChildView */ = {
 			isa = PBXGroup;
 			children = (
+				7BCCFCF92B839529000340DF /* Subviews */,
 				7B3141FD2B692A1400993468 /* MyChildView.swift */,
 			);
 			path = MyChildView;
+			sourceTree = "<group>";
+		};
+		7B5DF45A2B812FF600C69973 /* Locals */ = {
+			isa = PBXGroup;
+			children = (
+				7B5DF45F2B81305000C69973 /* Localizable.strings */,
+			);
+			path = Locals;
 			sourceTree = "<group>";
 		};
 		7BC8A03D2B6FBDD400F420D9 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				7BC8A03E2B6FBDE600F420D9 /* DateFormatter+Extension.swift */,
+				7B5DF4652B81318100C69973 /* StringExtension.swift */,
+				7BCCFCF72B8394ED000340DF /* ImagePicker.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -219,6 +283,65 @@
 				7B5C96C32B73BC09005B125C /* AddSpecialMomentView.swift */,
 			);
 			path = ReminderCellView;
+			sourceTree = "<group>";
+		};
+		7BCCFCDA2B837355000340DF /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				7BCCFCEC2B837824000340DF /* CircleSubviews */,
+				7BCCFCDB2B837366000340DF /* AdvantagesView.swift */,
+				7BCCFCDE2B837391000340DF /* PaywallPaymentMethodWantedMost.swift */,
+				7BCCFCE02B8373BD000340DF /* PaywallPaymentMethodView.swift */,
+				7BCCFCE22B8373DA000340DF /* PaywallContinueButton.swift */,
+				7BCCFCE42B8373F1000340DF /* PaywallTermsButton.swift */,
+				7BCCFCE62B837493000340DF /* AllPaywallPaymentsMethodsView.swift */,
+				7BCCFCE82B8374BA000340DF /* AllAdvantagesView.swift */,
+				7BCCFCEA2B83752E000340DF /* AnimationView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		7BCCFCEC2B837824000340DF /* CircleSubviews */ = {
+			isa = PBXGroup;
+			children = (
+				7BCCFCED2B837831000340DF /* FirstCircleView.swift */,
+				7BCCFCEF2B837842000340DF /* SecondCircleView.swift */,
+				7BCCFCF12B837856000340DF /* ThirdCircleView.swift */,
+			);
+			path = CircleSubviews;
+			sourceTree = "<group>";
+		};
+		7BCCFCF92B839529000340DF /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				7BCCFCFA2B839534000340DF /* AddChildView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		7BD1D8322B7502A500074008 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				7BD1D8332B7502B100074008 /* LottieAnimationView.swift */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		7BD1D8352B75032600074008 /* PaywallView */ = {
+			isa = PBXGroup;
+			children = (
+				7BCCFCDA2B837355000340DF /* Subviews */,
+				7BD1D8362B75032F00074008 /* PaywallView.swift */,
+			);
+			path = PaywallView;
+			sourceTree = "<group>";
+		};
+		7BD1D8382B75033B00074008 /* JSONLottieAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				7B5DF4672B81371400C69973 /* baby.json */,
+			);
+			path = JSONLottieAnimations;
 			sourceTree = "<group>";
 		};
 		7BD5A2CF2B6FC8DB00F2B1BF /* SpecialMomentsView */ = {
@@ -247,6 +370,9 @@
 			dependencies = (
 			);
 			name = GrowWithMe;
+			packageProductDependencies = (
+				7BD1D8302B7502A000074008 /* Lottie */,
+			);
 			productName = GrowWithMe;
 			productReference = 7B3141D72B691C7A00993468 /* GrowWithMe.app */;
 			productType = "com.apple.product-type.application";
@@ -273,8 +399,16 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
+				fr,
+				it,
+				tr,
+				"pt-PT",
 			);
 			mainGroup = 7B3141CE2B691C7A00993468;
+			packageReferences = (
+				7BD1D82F2B7502A000074008 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 7B3141D82B691C7A00993468 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -289,6 +423,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B5DF4682B81371400C69973 /* baby.json in Resources */,
+				7B5DF45D2B81305000C69973 /* Localizable.strings in Resources */,
 				7B3141E22B691C7C00993468 /* Preview Assets.xcassets in Resources */,
 				7B3141DF2B691C7C00993468 /* Assets.xcassets in Resources */,
 			);
@@ -301,32 +437,66 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BCCFCF82B8394ED000340DF /* ImagePicker.swift in Sources */,
 				7B3142022B692D4100993468 /* PhysicalDataViewModel.swift in Sources */,
+				7BCCFCEE2B837831000340DF /* FirstCircleView.swift in Sources */,
+				7BD1D8372B75032F00074008 /* PaywallView.swift in Sources */,
+				7BCCFCE32B8373DA000340DF /* PaywallContinueButton.swift in Sources */,
+				7BCCFCFB2B839534000340DF /* AddChildView.swift in Sources */,
+				7BCCFCF02B837842000340DF /* SecondCircleView.swift in Sources */,
+				7BCCFCF42B837FAD000340DF /* MyChildDataModel.swift in Sources */,
 				7B3141FE2B692A1400993468 /* MyChildView.swift in Sources */,
+				7BCCFCE92B8374BA000340DF /* AllAdvantagesView.swift in Sources */,
 				7BD5A2CA2B6FC2C800F2B1BF /* RemindersCellView.swift in Sources */,
 				7B3141FA2B6924B500993468 /* StoryView.swift in Sources */,
 				7B5C96C42B73BC09005B125C /* AddSpecialMomentView.swift in Sources */,
 				7BD5A2D12B6FC8F000F2B1BF /* SpecialMomentsView.swift in Sources */,
+				7B5DF4662B81318100C69973 /* StringExtension.swift in Sources */,
+				7BCCFCF22B837856000340DF /* ThirdCircleView.swift in Sources */,
 				7B3142002B692D1100993468 /* PhysicalDataModel.swift in Sources */,
 				7B5C96C62B73DDA9005B125C /* SpecialMomentDetailView.swift in Sources */,
 				7BD5A2D32B6FC94E00F2B1BF /* SpecialMomentsCellView.swift in Sources */,
 				7B3141F72B69212000993468 /* SettingsView.swift in Sources */,
 				7B3141F42B69211300993468 /* StatsView.swift in Sources */,
+				7BCCFCE72B837493000340DF /* AllPaywallPaymentsMethodsView.swift in Sources */,
+				7BCCFCE12B8373BD000340DF /* PaywallPaymentMethodView.swift in Sources */,
 				7BD5A2CC2B6FC4A700F2B1BF /* SpecialMomentsDataModel.swift in Sources */,
 				7BC8A0472B6FC0B200F420D9 /* ReminderView.swift in Sources */,
+				7BCCFCF62B838137000340DF /* MyChildViewModel.swift in Sources */,
+				7BCCFCDF2B837391000340DF /* PaywallPaymentMethodWantedMost.swift in Sources */,
 				7BC8A0422B6FBED600F420D9 /* ReminderDataViewModel.swift in Sources */,
 				7BD5A2CE2B6FC4E700F2B1BF /* SpecialMomentsDataViewModel.swift in Sources */,
 				7B3141F12B69210100993468 /* HomeView.swift in Sources */,
+				7BCCFCDC2B837366000340DF /* AdvantagesView.swift in Sources */,
 				7B3141DD2B691C7A00993468 /* TabBarView.swift in Sources */,
 				7BC8A03F2B6FBDE600F420D9 /* DateFormatter+Extension.swift in Sources */,
 				7BC8A0492B6FC0ED00F420D9 /* CheckboxView.swift in Sources */,
 				7B3141DB2B691C7A00993468 /* GrowWithMeApp.swift in Sources */,
+				7BCCFCE52B8373F1000340DF /* PaywallTermsButton.swift in Sources */,
+				7BD1D8342B7502B100074008 /* LottieAnimationView.swift in Sources */,
+				7BCCFCEB2B83752E000340DF /* AnimationView.swift in Sources */,
 				7B9318842B710B7400DFC9C3 /* AddReminderView.swift in Sources */,
 				7BC8A0442B6FBEEF00F420D9 /* ReminderDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7B5DF45F2B81305000C69973 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B5DF45E2B81305000C69973 /* en */,
+				7B5DF4602B81307200C69973 /* fr */,
+				7B5DF4612B81307500C69973 /* it */,
+				7B5DF4622B81307600C69973 /* pt-PT */,
+				7B5DF4632B81307700C69973 /* es */,
+				7B5DF4642B81307800C69973 /* tr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7B3141E32B691C7C00993468 /* Debug */ = {
@@ -528,6 +698,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7BD1D82F2B7502A000074008 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7BD1D8302B7502A000074008 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7BD1D82F2B7502A000074008 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7B3141CF2B691C7A00993468 /* Project object */;
 }

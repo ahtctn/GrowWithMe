@@ -35,7 +35,7 @@ class ReminderDataViewModel: ObservableObject {
         }
     }
     
-    func deleteExpense(_ reminder: ReminderDataModel) async {
+    func deleteReminder(_ reminder: ReminderDataModel) async {
         if let index = reminderData.firstIndex(where: { $0.id == reminder.id }) {
             reminderData.remove(at: index)
             updateReminders()

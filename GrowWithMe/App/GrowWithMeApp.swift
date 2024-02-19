@@ -12,6 +12,7 @@ struct GrowWithMeApp: App {
     var body: some Scene {
         WindowGroup {
             TabBarView()
+            
         }
     }
 }

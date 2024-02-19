@@ -9,9 +9,33 @@ import SwiftUI
 
 struct PaywallTermsButton: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(spacing: 50) {
+            Button {
+                print("privacy policy button tapped.")
+            } label: {
+                Text("privacy_policy".localized())
+                    .font(.footnote).bold()
+            }
+            
+            Button {
+                print("restore policy button tapped")
+            } label: {
+                Text("restore".localized())
+                    .font(.footnote).bold()
+            }
+            
+            Button {
+                print("terms of use button tapped")
+            } label: {
+                Text("terms_of_use".localized())
+                    .font(.footnote).bold()
+            }
+        }
+        .padding(.leading, 20)
+        .padding(.trailing, 20)
     }
 }
+
 
 #Preview {
     PaywallTermsButton()

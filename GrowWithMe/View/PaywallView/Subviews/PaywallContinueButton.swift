@@ -9,7 +9,24 @@ import SwiftUI
 
 struct PaywallContinueButton: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button {
+            print("Continue button tapped")
+        } label: {
+            HStack {
+                Spacer()
+                Text("continue".localized())
+                    .foregroundStyle(.white)
+                    .bold()
+                Spacer()
+            }
+            
+            .background(
+                    RoundedRectangle(cornerRadius: 16)
+                        .foregroundStyle(Color.orange)
+                        .frame(height: 50)
+                        .padding(14)
+            )
+        }
     }
 }
 

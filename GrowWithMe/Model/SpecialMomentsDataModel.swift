@@ -22,7 +22,7 @@ import SwiftUI
 struct SpecialMomentsDataModel: Identifiable, Codable {
     var id = UUID().uuidString
     var title: String
-    var imageData: Data? // Resim verilerini tutmak için Data türü kullanılıyor
+    var imageData: Data?
     var subtitle: String
     var date: Date
 

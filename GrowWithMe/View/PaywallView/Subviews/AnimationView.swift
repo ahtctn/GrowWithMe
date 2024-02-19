@@ -9,10 +9,28 @@ import SwiftUI
 
 struct AnimationView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            FirstCircleView()
+            SecondCircleView()
+            ThirdCircleView()
+            LootieAnimationView(name: "baby", loopMode: .loop)
+                .frame(width: 150, height: 150)
+                
+            
+        }
+        
+        
+        
+        
+        
     }
 }
 
 #Preview {
     AnimationView()
 }
+
+
+
+
+

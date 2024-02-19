@@ -6,48 +6,76 @@
 //
 
 import SwiftUI
-
+//MARK: Section'daki add butonundan dolayı preview crash veriyor.
 struct MyChildView: View {
-    @ObservedObject var viewModel: PhysicalDataViewModel = PhysicalDataViewModel()
+    @EnvironmentObject var myChildDataVM: MyChildViewModel
     var body: some View {
-        Section("My Child") {
-            HStack(spacing: 10) {
+        Section(header: HStack {
+            Text("My Child")
+            Spacer()
+            Button {
+                myChildDataVM.presentAddChild()
                 
-                Image("baby")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 150, height: 150, alignment: .center)
-                    .cornerRadius(75)
-                
-                VStack(alignment: .leading, spacing: 10) {
-                    Text("Prenses Ela")
-                        .font(Row.name.textStyle)
-                    HStack(spacing: 8) {
-                        Row.age.imageName
-                            .foregroundStyle(Row.age.fontColor)
-                        Text("12 months")
-                            .foregroundStyle(.secondary)
-                    }
-                    
-                    HStack {
-                        Row.length.imageName
-                            .foregroundStyle(Row.length.fontColor)
-                        Text("6kg")
-                            .padding(2)
-                        Row.weight.imageName
-                            .foregroundStyle(Row.weight.fontColor)
-                        Text("73 cm")
-                    }
-                    
-                    Button {
+            } label: {
+                Image(systemName: "plus.circle.fill")
+            }
+        }) {
+            if myChildDataVM.myChildData.isEmpty {
+                HStack(spacing: 10) {
+                    LootieAnimationView(name: "baby", loopMode: .loop)
+                        .frame(width: 100, height: 100, alignment: .center)
+                    Text("Please create your child's profile to add your data.")
+                        .bold()
+                }
+            } else {
+                if let childData = myChildDataVM.myChildData.first {
+                    HStack(spacing: 10) {
                         
-                    } label: {
-                        Text("Click to see the details")
-                            .underline()
-                            .font(Row.detail.textStyle)
+                        Image(uiImage: UIImage(data: childData.imageData!)!)
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 150, height: 150, alignment: .center)
+                            .cornerRadius(75)
+                        
+                        VStack(alignment: .leading, spacing: 10) {
+                            Text(childData.name)
+                                .font(Row.name.textStyle)
+                            HStack(spacing: 8) {
+                                Row.age.imageName
+                                    .foregroundStyle(Row.age.fontColor)
+                                Text(childData.birthDate.description)
+                                    .foregroundStyle(.secondary)
+                            }
+                            
+                            HStack {
+                                Row.length.imageName
+                                    .foregroundStyle(Row.length.fontColor)
+                                Text("\(childData.weight) kg")
+                                    .padding(2)
+                                Row.weight.imageName
+                                    .foregroundStyle(Row.weight.fontColor)
+                                Text("\(childData.height) cm")
+                            }
+                            
+                            Button {
+                                
+                            } label: {
+                                Text("Click to see the details")
+                                    .underline()
+                                    .font(Row.detail.textStyle)
+                            }
+                        }
                     }
                 }
             }
+            
+            
+            
+            
+        }
+        .sheet(isPresented: $myChildDataVM.isAddChildViewPresented) {
+            AddChildView(dismiss: {myChildDataVM.isAddChildViewPresented = false})
+                .presentationDetents([.fraction(0.6)])
         }
     }
 }
@@ -91,3 +119,5 @@ extension MyChildView {
         }
     }
 }
+
+

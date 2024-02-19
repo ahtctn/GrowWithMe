@@ -18,8 +18,10 @@ struct HomeView: View {
         NavigationStack {
             List {
                 MyChildView()
+                    .environmentObject(MyChildViewModel())
                 ReminderView()
                     .environmentObject(ReminderDataViewModel())
+                    .environmentObject(MyChildViewModel())
                 SpecialMomentsView()
                     .environmentObject(SpecialMomentsDataViewModel())
                 

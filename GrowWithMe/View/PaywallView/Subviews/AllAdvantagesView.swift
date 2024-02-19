@@ -9,7 +9,12 @@ import SwiftUI
 
 struct AllAdvantagesView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading, spacing: 16) {
+            AdvantagesView(imageName: "person.fill", name: "first_advantage".localized())
+            AdvantagesView(imageName: "person.fill", name: "second_advantage".localized())
+            AdvantagesView(imageName: "person.fill", name: "third_advantage".localized())
+            AdvantagesView(imageName: "person.fill", name: "fourth_advantage".localized())
+        }
     }
 }
 
