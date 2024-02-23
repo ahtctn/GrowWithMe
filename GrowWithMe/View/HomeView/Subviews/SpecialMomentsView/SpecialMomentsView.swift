@@ -14,10 +14,9 @@ struct SpecialMomentsView: View {
         Section(
             header:
                 HStack {
-                    Text("Special Moments")
+                    Text("special_moments".localized())
                     Spacer()
                     Button {
-                        print("add special moments button tapped")
                         specialMomentsDataVM.presentAddSpecialMomentsView()
                     } label: {
                         Image(systemName: "plus.circle.fill")
@@ -39,7 +38,7 @@ struct SpecialMomentsView: View {
                                             }
                                             
                                         } label: {
-                                            Label("Delete", systemImage: "trash")
+                                            Label("delete".localized(), systemImage: "trash")
                                         }
                                     }
                             }
@@ -68,9 +67,9 @@ struct SpecialMomentsView: View {
                 .frame(width: 100, height: 100, alignment: .center)
             
             VStack(alignment: .leading, spacing: 4) {
-                Text("No Special Moments")
+                Text("no_special_moments".localized())
                     .font(.title3).bold()
-                Text("You can record your child's unique moments here.")
+                Text("no_special_moments_subtitle".localized())
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
             }

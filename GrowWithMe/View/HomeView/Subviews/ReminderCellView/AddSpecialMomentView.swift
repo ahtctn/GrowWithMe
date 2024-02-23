@@ -36,7 +36,7 @@ struct AddSpecialMomentView: View {
                         Button {
                             self.showImagePicker = true
                         } label: {
-                            Text("Select Image")
+                            Text("select_image".localized())
                                 .fontWeight(.bold)
                         }
                     }
@@ -63,10 +63,10 @@ struct AddSpecialMomentView: View {
                         }
                     }
                 }
-                TextField("Title", text: $title)
-                TextField("Subtitle", text: $subtitle)
+                TextField("title".localized(), text: $title)
+                TextField("description".localized(), text: $subtitle)
                 DatePicker(
-                    "Start Date",
+                    "start_date".localized(),
                     selection: $date,
                     displayedComponents: [.date]
                 )
@@ -82,7 +82,7 @@ struct AddSpecialMomentView: View {
                         }
                         dismiss()
                     } label: {
-                        Text("Done")
+                        Text("done".localized())
                     }
                 }
                 
@@ -95,7 +95,7 @@ struct AddSpecialMomentView: View {
                     }
                 }
             }
-            .navigationTitle("Add special moment")
+            .navigationTitle("add_special_moment".localized())
             .navigationBarTitleDisplayMode(.inline)
             .sheet(isPresented: $showImagePicker, onDismiss: loadImage) {
                 ImagePicker(image: self.$selectedImage, sourceType: self.imagePickerSourceType)

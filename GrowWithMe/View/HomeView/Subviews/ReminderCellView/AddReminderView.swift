@@ -12,17 +12,18 @@ struct AddReminderView: View {
     @State private var description: String = ""
     @State private var date = Date()
     @State private var note: String = ""
+    
     @EnvironmentObject var reminderDataVM: ReminderDataViewModel
     var dismiss: () -> Void
 
     var body: some View {
         NavigationView {
             Form {
-                TextField("Title", text: $title)
-                TextField("Description", text: $description)
-                TextField("Note", text: $note)
+                TextField("title".localized(), text: $title)
+                TextField("description".localized(), text: $description)
+                TextField("note".localized(), text: $note)
                 DatePicker(
-                        "Start Date",
+                    "start_date".localized(),
                         selection: $date,
                         displayedComponents: [.date]
                     )
@@ -38,7 +39,7 @@ struct AddReminderView: View {
                         }
                         dismiss()
                     } label: {
-                        Text("Done")
+                        Text("done".localized())
                     }
                 }
                 
@@ -51,7 +52,7 @@ struct AddReminderView: View {
                     }
                 }
             }
-            .navigationTitle("Add reminder")
+            .navigationTitle("add_reminder".localized())
             .navigationBarTitleDisplayMode(.inline)
         }
     }

@@ -49,7 +49,7 @@ struct SpecialMomentDetailView: View {
             }
         }
         .padding()
-        .navigationTitle("Special Moment")
+        .navigationTitle("special_moment".localized())
         .navigationBarTitleDisplayMode(.inline)
     }
 }

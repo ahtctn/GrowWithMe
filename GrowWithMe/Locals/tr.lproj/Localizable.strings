@@ -5,6 +5,14 @@
   Created by Ahmet Ali ÇETİN on 17.02.2024.
   
 */
+
+/*TabBar*/
+"home" = "Ana Sayfa";
+"stats" = "İstatistikler";
+"story" = "Hikayeler";
+"settings" = "Ayarlar";
+
+/*PaywallView*/
 "get_unlimited_access" = "Sınırsız erişime terfi edin.";
 "first_advantage" = "Sınırsız hatırlatıcı ekleme hakkı";
 "second_advantage" = "Boy ve kilo takibi grafikleri";
@@ -17,3 +25,47 @@
 "privacy_policy" = "Gizlilik";
 "restore" = "Geri yükle";
 "terms_of_use" = "Kullanım koşulları";
+"save_percent" = "%90 KAR";
+"weekly_price" = "0.31$/ hafta";
+
+
+/*MyChildView*/
+"my_child" = "Çocuğum";
+"empty_child_cell_text" = "Lütfen veri eklemek için çocuğunuzun profilini tamamlayın.";
+"click_to_see_the_details" = "Detaylar için tıkla";
+
+/*AddChildView*/
+"select_image" = "Fotoğraf seç";
+"name" = "İsim";
+"weight" = "Ağırlık (kg)";
+"height" = "Yükseklik (cm)";
+"birth_date" = "Doğum Tarihi";
+"done" = "Tamam";
+
+/*ReminderView*/
+"reminders" = "Anımsatıcılar";
+"special_moments" = "Özel Anlar";
+
+"no_reminders" = "Anımsatıcı yok";
+"no_reminders_subtitle" = "Çocuğunun anımsatıcılarını buraya kaydet!";
+
+/*AddReminderView*/
+"add_reminder" = "Anımsatıcı ekle";
+"title" = "Başlık";
+"description" = "Açıklama";
+"note" = "Not";
+"start_date" = "Başlangıç Tarihi";
+
+/*SpecialMomentsView*/
+"no_special_moments" = "Özel an oluşturulmadı.";
+"no_special_moments_subtitle" = "Çocuğunun eşsiz anlarını burada kaydet!";
+"special_moment" = "Özel An";
+
+/*AddSpecialMoment*/
+"special_moments" = "Özel Anlar";
+"add_special_moment" = "Özel An Ekle";
+"delete" = "Sil";
+
+/*ReminderPopupView*/
+"reminder_added" = "Anımsatıcı eklendi.";
+"reminder_added_description" = "Anımsatıcı başarıyla eklendi. Anımsatıcılarınızı kontrol ediniz.";

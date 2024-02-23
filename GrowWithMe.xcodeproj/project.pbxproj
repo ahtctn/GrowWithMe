@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B0FF2272B87A40D001279C7 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0FF2262B87A40D001279C7 /* PopupView.swift */; };
 		7B3141DB2B691C7A00993468 /* GrowWithMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3141DA2B691C7A00993468 /* GrowWithMeApp.swift */; };
 		7B3141DD2B691C7A00993468 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3141DC2B691C7A00993468 /* TabBarView.swift */; };
 		7B3141DF2B691C7C00993468 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B3141DE2B691C7C00993468 /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B0FF2262B87A40D001279C7 /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
 		7B3141D72B691C7A00993468 /* GrowWithMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrowWithMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B3141DA2B691C7A00993468 /* GrowWithMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowWithMeApp.swift; sourceTree = "<group>"; };
 		7B3141DC2B691C7A00993468 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
@@ -119,6 +121,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B0FF2252B87A3F3001279C7 /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				7B0FF2262B87A40D001279C7 /* PopupView.swift */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
 		7B3141CE2B691C7A00993468 = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +249,7 @@
 		7B3141FB2B692A0500993468 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
+				7B0FF2252B87A3F3001279C7 /* Popup */,
 				7BD5A2CF2B6FC8DB00F2B1BF /* SpecialMomentsView */,
 				7BC8A0452B6FC0A700F420D9 /* ReminderCellView */,
 				7B3141FC2B692A0900993468 /* MyChildView */,
@@ -469,6 +480,7 @@
 				7B3141F12B69210100993468 /* HomeView.swift in Sources */,
 				7BCCFCDC2B837366000340DF /* AdvantagesView.swift in Sources */,
 				7B3141DD2B691C7A00993468 /* TabBarView.swift in Sources */,
+				7B0FF2272B87A40D001279C7 /* PopupView.swift in Sources */,
 				7BC8A03F2B6FBDE600F420D9 /* DateFormatter+Extension.swift in Sources */,
 				7BC8A0492B6FC0ED00F420D9 /* CheckboxView.swift in Sources */,
 				7B3141DB2B691C7A00993468 /* GrowWithMeApp.swift in Sources */,

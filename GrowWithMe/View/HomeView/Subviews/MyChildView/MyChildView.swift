@@ -11,7 +11,7 @@ struct MyChildView: View {
     @EnvironmentObject var myChildDataVM: MyChildViewModel
     var body: some View {
         Section(header: HStack {
-            Text("My Child")
+            Text("my_child".localized())
             Spacer()
             Button {
                 myChildDataVM.presentAddChild()
@@ -24,7 +24,7 @@ struct MyChildView: View {
                 HStack(spacing: 10) {
                     LootieAnimationView(name: "baby", loopMode: .loop)
                         .frame(width: 100, height: 100, alignment: .center)
-                    Text("Please create your child's profile to add your data.")
+                    Text("empty_child_cell_text".localized())
                         .bold()
                 }
             } else {
@@ -60,7 +60,7 @@ struct MyChildView: View {
                             Button {
                                 
                             } label: {
-                                Text("Click to see the details")
+                                Text("click_to_see_the_details".localized())
                                     .underline()
                                     .font(Row.detail.textStyle)
                             }

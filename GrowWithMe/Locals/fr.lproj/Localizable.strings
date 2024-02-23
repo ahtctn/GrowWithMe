@@ -5,3 +5,66 @@
   Created by Ahmet Ali ÇETİN on 17.02.2024.
   
 */
+
+/*TabBar*/
+"home" = "Accueil";
+"stats" = "Statistiques";
+"story" = "Histoire";
+"settings" = "Paramètres";
+
+/*Paywall View:*/
+"get_unlimited_access" = "Obtenez un accès illimité.";
+"first_advantage" = "Droit d'ajouter des rappels illimités";
+"second_advantage" = "Graphiques de suivi de la taille et du poids";
+"third_advantage" = "Droit illimité d'ajouter des moments spéciaux.";
+"fourth_advantage" = "Bibliothèque d'histoires audio riches.";
+"weekly" = "Hebdomadaire";
+"monthly" = "Mensuel";
+"yearly" = "Annuel";
+"continue" = "Continuer";
+"privacy_policy" = "Politique de confidentialité";
+"restore" = "Restaurer";
+"terms_of_use" = "Conditions d'utilisation";
+"save_percent" = "ÉCONOMISEZ 90%";
+"weekly_price" = "$0.31/semaine";
+
+/*MyChildView:*/
+"my_child" = "Mon enfant";
+"empty_child_cell_text" = "Veuillez créer le profil de votre enfant pour ajouter vos données.";
+"click_to_see_the_details" = "Cliquez pour voir les détails";
+
+/*AddChildView:*/
+"select_image" = "Sélectionner une image";
+"name" = "Nom";
+"weight" = "Poids (kg)";
+"height" = "Taille (cm)";
+"birth_date" = "Date de naissance";
+"done" = "Terminé";
+
+/*ReminderView:*/
+"reminders" = "Rappels";
+"special_moments" = "Moments spéciaux";
+
+"no_reminders" = "Aucun rappel";
+"no_reminders_subtitle" = "Enregistrez les rappels de votre enfant ici!";
+
+/*AddReminderView:*/
+"add_reminder" = "Ajouter un rappel";
+"title" = "Titre";
+"description" = "Description";
+"note" = "Note";
+"start_date" = "Date de début";
+
+/*SpecialMomentsView:*/
+"no_special_moments" = "Aucun moment spécial n'a été créé.";
+"no_special_moments_subtitle" = "Enregistrez les moments uniques de votre enfant ici!";
+"special_moment" = "Moment spécial";
+
+/*AddSpecialMoment:*/
+"special_moments" = "Moments spéciaux";
+"add_special_moment" = "Ajouter un moment spécial";
+"delete" = "Supprimer";
+
+/*ReminderPopupView:*/
+"reminder_added" = "Rappel ajouté";
+"reminder_added_description" = "Rappel ajouté avec succès. Consultez la section des rappels pour voir les rappels.";

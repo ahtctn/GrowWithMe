@@ -12,7 +12,7 @@ struct AllPaywallPaymentsMethodsView: View {
         VStack(spacing: 16) {
             PaywallPaymentMethodView(priceMethod: "weekly".localized(), price: "$1.99")
             PaywallPaymentMethodView(priceMethod: "monthly".localized(), price: "$4.99")
-            PaywallPaymentMethodWantedMost(priceMethod: "yearly".localized(), price: "$15.00", oldPrice: "$30.00", savePercent: "SAVE 90%", weeklyPrice: "$0.31/week")
+            PaywallPaymentMethodWantedMost(priceMethod: "yearly".localized(), price: "$15.00", oldPrice: "$30.00", savePercent: "save_percent".localized(), weeklyPrice: "weekly_price".localized())
         }
     }
 }

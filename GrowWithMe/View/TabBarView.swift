@@ -13,19 +13,19 @@ struct TabBarView: View {
         TabView {
             HomeView()
                 .tabItem {
-                    Label("Home", systemImage: "house.fill")
+                    Label("home".localized(), systemImage: "house.fill")
                 }
             StatsView()
                 .tabItem {
-                    Label("Stats", systemImage: "chart.pie.fill")
+                    Label("stats".localized(), systemImage: "chart.pie.fill")
                 }
             StoryView()
                 .tabItem {
-                    Label("Story", systemImage: "book.fill")
+                    Label("story".localized(), systemImage: "book.fill")
                 }
             SettingsView()
                 .tabItem {
-                    Label("Settings", systemImage: "gear")
+                    Label("settings".localized(), systemImage: "gear")
                 }
         }
     }

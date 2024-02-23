@@ -12,10 +12,11 @@ struct ReminderView: View {
     @EnvironmentObject var myChildDataVM: MyChildViewModel
     @State private var isChecked: Bool = false
     @State private var isPaywallPresented: Bool = false
+    @Binding var isShowingPopup: Bool 
     
     var body: some View {
         Section(header: HStack {
-            Text("Reminders")
+            Text("reminders".localized())
             Spacer()
             Button {
                 
@@ -50,7 +51,13 @@ struct ReminderView: View {
             
         }
         .sheet(isPresented: $reminderDataVM.isAddReminderPresented) {
-            AddReminderView(dismiss: {reminderDataVM.isAddReminderPresented = false})
+            AddReminderView(dismiss: {
+                reminderDataVM.isAddReminderPresented = false
+                isShowingPopup = true
+                DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                    isShowingPopup = false
+                }
+            })
                 .presentationDetents([.fraction(0.4)])
         }
 
@@ -67,7 +74,7 @@ struct ReminderView: View {
                 await reminderDataVM.deleteReminder(reminder)
             }
         } label: {
-            Label("Delete", systemImage: "trash")
+            Label("delete".localized(), systemImage: "trash")
         }
         .tint(.red)
     }
@@ -80,9 +87,9 @@ struct ReminderView: View {
                 .frame(width: 100, height: 100, alignment: .center)
             
             VStack(alignment: .leading, spacing: 4) {
-                Text("No Reminders")
+                Text("no_reminders".localized())
                     .font(.title3).bold()
-                Text("Tap the add button to add a reminder.")
+                Text("no_reminders_subtitle".localized())
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
             }
@@ -102,5 +109,5 @@ struct ReminderView: View {
 }
 
 #Preview {
-    ReminderView()
+    ReminderView(isShowingPopup: .constant(true))
 }

@@ -38,7 +38,7 @@ struct AddChildView: View {
                         Button {
                             self.showImagePicker = true
                         } label: {
-                            Text("Select Image")
+                            Text("select_image".localized())
                                 .fontWeight(.bold)
                         }
                     }
@@ -65,12 +65,12 @@ struct AddChildView: View {
                         }
                     }
                 }
-                TextField("Name", text: $name)
-                TextField("Weight", text: $weight)
+                TextField("name".localized(), text: $name)
+                TextField("weight".localized(), text: $weight)
                     .keyboardType(.numberPad)
-                TextField("Height", text: $height)
+                TextField("height".localized(), text: $height)
                     .keyboardType(.numberPad)
-                DatePicker("Birth Date", selection: $birthDate, displayedComponents: [.date])
+                DatePicker("birth_date".localized(), selection: $birthDate, displayedComponents: [.date])
             }
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
@@ -79,7 +79,7 @@ struct AddChildView: View {
                         myChildDataVM.addChildData(addChildData)
                         dismiss()
                     } label: {
-                        Text("Done")
+                        Text("done".localized())
                     }
                 }
                 

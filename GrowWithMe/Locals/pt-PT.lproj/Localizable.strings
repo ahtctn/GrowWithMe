@@ -5,3 +5,66 @@
   Created by Ahmet Ali ÇETİN on 17.02.2024.
   
 */
+
+/*TabBar:*/
+"home" = "Início";
+"stats" = "Estatísticas";
+"story" = "História";
+"settings" = "Configurações";
+
+/*Paywall View:*/
+"get_unlimited_access" = "Obtenha acesso ilimitado.";
+"first_advantage" = "Direito de adicionar lembretes ilimitados";
+"second_advantage" = "Gráficos de rastreamento de altura e peso";
+"third_advantage" = "Direito ilimitado de adicionar momentos especiais.";
+"fourth_advantage" = "Rica biblioteca de histórias em áudio.";
+"weekly" = "Semanal";
+"monthly" = "Mensal";
+"yearly" = "Anual";
+"continue" = "Continuar";
+"privacy_policy" = "Política de Privacidade";
+"restore" = "Restaurar";
+"terms_of_use" = "Termos de Uso";
+"save_percent" = "ECONOMIZE 90%";
+"weekly_price" = "€0.31/semana";
+
+/*MyChildView:*/
+"my_child" = "Meu Filho";
+"empty_child_cell_text" = "Por favor, crie o perfil do seu filho para adicionar seus dados.";
+"click_to_see_the_details" = "Clique para ver os detalhes";
+
+/*AddChildView:*/
+"select_image" = "Selecionar Imagem";
+"name" = "Nome";
+"weight" = "Peso (kg)";
+"height" = "Altura (cm)";
+"birth_date" = "Data de Nascimento";
+"done" = "Concluído";
+
+/*ReminderView:*/
+"reminders" = "Lembretes";
+"special_moments" = "Momentos Especiais";
+
+"no_reminders" = "Sem Lembretes";
+"no_reminders_subtitle" = "Salve aqui os lembretes do seu filho!";
+
+/*AddReminderView:*/
+"add_reminder" = "Adicionar Lembrete";
+"title" = "Título";
+"description" = "Descrição";
+"note" = "Nota";
+"start_date" = "Data de Início";
+
+/*SpecialMomentsView:*/
+"no_special_moments" = "Nenhum momento especial foi criado.";
+"no_special_moments_subtitle" = "Salve aqui os momentos únicos do seu filho!";
+"special_moment" = "Momento Especial";
+
+/*AddSpecialMoment:*/
+"special_moments" = "Momentos Especiais";
+"add_special_moment" = "Adicionar Momento Especial";
+"delete" = "Apagar";
+
+/*ReminderPopupView:*/
+"reminder_added" = "Lembrete adicionado";
+"reminder_added_description" = "Lembrete adicionado com sucesso. Verifique a seção de lembretes para ver os lembretes.";

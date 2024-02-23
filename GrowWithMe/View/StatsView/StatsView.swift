@@ -33,7 +33,7 @@ struct StatsView: View {
                     
                 }
             }
-            .navigationTitle("Stats")
+            .navigationTitle("stats".localized())
         }
         
     }

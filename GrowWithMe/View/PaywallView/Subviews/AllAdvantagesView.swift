@@ -10,10 +10,10 @@ import SwiftUI
 struct AllAdvantagesView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            AdvantagesView(imageName: "person.fill", name: "first_advantage".localized())
-            AdvantagesView(imageName: "person.fill", name: "second_advantage".localized())
-            AdvantagesView(imageName: "person.fill", name: "third_advantage".localized())
-            AdvantagesView(imageName: "person.fill", name: "fourth_advantage".localized())
+            AdvantagesView(imageName: "pencil.tip.crop.circle.badge.plus.fill", name: "first_advantage".localized())
+            AdvantagesView(imageName: "chart.pie.fill", name: "second_advantage".localized())
+            AdvantagesView(imageName: "camera.fill", name: "third_advantage".localized())
+            AdvantagesView(imageName: "music.mic.circle.fill", name: "fourth_advantage".localized())
         }
     }
 }

@@ -6,6 +6,12 @@
   
 */
 
+/*TabBar*/
+"home" = "Home";
+"stats" = "Stats";
+"story" = "Story";
+"settings" = "Settings";
+
 /*Paywall View*/
 "get_unlimited_access" = "Get unlimited access.";
 "first_advantage" = "Right to add unlimited reminders";
@@ -19,3 +25,46 @@
 "privacy_policy" = "Privacy policy";
 "restore" = "Restore";
 "terms_of_use" = "Terms of use";
+"save_percent" = "SAVE 90%";
+"weekly_price" = "$0.31/week";
+
+/*MyChildView*/
+"my_child" = "My Child";
+"empty_child_cell_text" = "Please create your child's profile to add your data.";
+"click_to_see_the_details" = "Click to see the details";
+
+/*AddChildView*/
+"select_image" = "Select Image";
+"name" = "Name";
+"weight" = "Weight (kg)";
+"height" = "Height (cm)";
+"birth_date" = "Birth Date";
+"done" = "Done";
+
+/*ReminderView*/
+"reminders" = "Reminders";
+"special_moments" = "Special Moments";
+
+"no_reminders" = "No Reminder";
+"no_reminders_subtitle" = "Save your child's reminders here!";
+
+/*AddReminderView*/
+"add_reminder" = "Add Reminder";
+"title" = "Title";
+"description" = "Description";
+"note" = "Note";
+"start_date" = "Start Date";
+
+/*SpecialMomentsView*/
+"no_special_moments" = "No special moments were created.";
+"no_special_moments_subtitle" = "Save your child's unique moments here!";
+"special_moment" = "Special Moment";
+
+/*AddSpecialMoment*/
+"special_moments" = "Special Moments";
+"add_special_moment" = "Add Special Moment";
+"delete" = "Delete";
+
+/*ReminderPopupView*/
+"reminder_added" = "Reminder added";
+"reminder_added_description" = "Reminder added successfully. Check out the reminder section to see the reminders.";

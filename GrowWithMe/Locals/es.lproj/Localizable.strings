@@ -5,3 +5,66 @@
   Created by Ahmet Ali ÇETİN on 17.02.2024.
   
 */
+
+//TabBar:
+"home" = "Inicio";
+"stats" = "Estadísticas";
+"story" = "Historia";
+"settings" = "Ajustes";
+
+//Paywall View:
+"get_unlimited_access" = "Obtener acceso ilimitado.";
+"first_advantage" = "Derecho a añadir recordatorios ilimitados";
+"second_advantage" = "Gráficos de seguimiento de altura y peso";
+"third_advantage" = "Derecho ilimitado a añadir momentos especiales.";
+"fourth_advantage" = "Rica biblioteca de historias de audio.";
+"weekly" = "Semanal";
+"monthly" = "Mensual";
+"yearly" = "Anual";
+"continue" = "Continuar";
+"privacy_policy" = "Política de privacidad";
+"restore" = "Restaurar";
+"terms_of_use" = "Términos de uso";
+"save_percent" = "AHORRA 90%";
+"weekly_price" = "€0.31/semana";
+
+//MyChildView:
+"my_child" = "Mi Hijo";
+"empty_child_cell_text" = "Por favor, crea el perfil de tu hijo para agregar tus datos.";
+"click_to_see_the_details" = "Haz clic para ver los detalles";
+
+//AddChildView:
+"select_image" = "Seleccionar Imagen";
+"name" = "Nombre";
+"weight" = "Peso (kg)";
+"height" = "Altura (cm)";
+"birth_date" = "Fecha de Nacimiento";
+"done" = "Hecho";
+
+//ReminderView:
+"reminders" = "Recordatorios";
+"special_moments" = "Momentos Especiales";
+
+"no_reminders" = "Sin Recordatorios";
+"no_reminders_subtitle" = "¡Guarda aquí los recordatorios de tu hijo!";
+
+//AddReminderView:
+"add_reminder" = "Agregar Recordatorio";
+"title" = "Título";
+"description" = "Descripción";
+"note" = "Nota";
+"start_date" = "Fecha de Inicio";
+
+//SpecialMomentsView:
+"no_special_moments" = "No se han creado momentos especiales.";
+"no_special_moments_subtitle" = "¡Guarda aquí los momentos únicos de tu hijo!";
+"special_moment" = "Momento Especial";
+
+//AddSpecialMoment:
+"special_moments" = "Momentos Especiales";
+"add_special_moment" = "Agregar Momento Especial";
+"delete" = "Eliminar";
+
+//ReminderPopupView:
+"reminder_added" = "Recordatorio agregado";
+"reminder_added_description" = "Recordatorio agregado exitosamente. Verifica la sección de recordatorios para ver los recordatorios.";

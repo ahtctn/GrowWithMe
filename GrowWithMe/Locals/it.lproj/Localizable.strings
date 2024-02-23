@@ -5,3 +5,70 @@
   Created by Ahmet Ali ÇETİN on 17.02.2024.
   
 */
+
+/*TabBar:*/
+"home" = "Home";
+"stats" = "Statistiche";
+"story" = "Storia";
+"settings" = "Impostazioni";
+
+/*Paywall View:*/
+"get_unlimited_access" = "Ottieni accesso illimitato.";
+"first_advantage" = "Diritto di aggiungere promemoria illimitati";
+"second_advantage" = "Grafici di tracciamento altezza e peso";
+"third_advantage" = "Diritto illimitato di aggiungere momenti speciali.";
+"fourth_advantage" = "Ricca biblioteca di storie audio.";
+"weekly" = "Settimanale";
+"monthly" = "Mensile";
+"yearly" = "Annuale";
+"continue" = "Continua";
+"privacy_policy" = "Informativa sulla privacy";
+"restore" = "Ripristina";
+"terms_of_use" = "Termini di servizio";
+"save_percent" = "SALVA il 90%";
+"weekly_price" = "€0.31/settimana";
+
+/*MyChildView:*/
+"my_child" = "Mio Figlio";
+"empty_child_cell_text" = "Si prega di creare il profilo del proprio figlio per aggiungere i propri dati.";
+"click_to_see_the_details" = "Clicca per vedere i dettagli";
+
+/*AddChildView:*/
+"select_image" = "Seleziona Immagine";
+"name" = "Nome";
+"weight" = "Peso (kg)";
+"height" = "Altezza (cm)";
+"birth_date" = "Data di Nascita";
+"done" = "Fatto";
+
+/*ReminderView:*/
+"reminders" = "Promemoria";
+"special_moments" = "Momenti Speciali";
+
+"no_reminders" = "Nessun Promemoria";
+"no_reminders_subtitle" = "Salva qui i promemoria del tuo bambino!";
+
+/*AddReminderView:*/
+"add_reminder" = "Aggiungi Promemoria";
+"title" = "Titolo";
+"description" = "Descrizione";
+"note" = "Nota";
+"start_date" = "Data di Inizio";
+
+/*SpecialMomentsView:*/
+"no_special_moments" = "Non sono stati creati momenti speciali.";
+"no_special_moments_subtitle" = "Salva qui i momenti unici del tuo bambino!";
+"special_moment" = "Momento Speciale";
+
+/*AddSpecialMoment:*/
+"special_moments" = "Momenti Speciali";
+"add_special_moment" = "Aggiungi Momento Speciale";
+"delete" = "Elimina";
+
+/*ReminderPopupView:*/
+"reminder_added" = "Promemoria Aggiunto";
+"reminder_added_description" = "Promemoria aggiunto con successo. Controlla la sezione promemoria per vedere i promemoria.";
+
+
+
+
