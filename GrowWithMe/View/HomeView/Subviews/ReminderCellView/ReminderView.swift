@@ -12,7 +12,9 @@ struct ReminderView: View {
     @EnvironmentObject var myChildDataVM: MyChildViewModel
     @State private var isChecked: Bool = false
     @State private var isPaywallPresented: Bool = false
-    @Binding var isShowingPopup: Bool 
+    @State private var isAddReminderPresented = false
+    @Binding var isShowingPopup: Bool
+    @State private var presentSheet: Bool = false
     
     var body: some View {
         Section(header: HStack {
@@ -24,7 +26,6 @@ struct ReminderView: View {
                     isPaywallPresented = true
                 } else {
                     reminderDataVM.presentAddReminder()
-                    //isPaywallPresented = true
                 }
                 
             } label: {
@@ -48,7 +49,6 @@ struct ReminderView: View {
             } else {
                 noCellView()
             }
-            
         }
         .sheet(isPresented: $reminderDataVM.isAddReminderPresented) {
             AddReminderView(dismiss: {
@@ -64,6 +64,10 @@ struct ReminderView: View {
         .fullScreenCover(isPresented: $isPaywallPresented){
             PaywallView(isPaywallPresented: $isPaywallPresented)
         }
+        
+        .sheet(isPresented: $presentSheet, content: {
+            SheetView()
+        })
     }
     
     

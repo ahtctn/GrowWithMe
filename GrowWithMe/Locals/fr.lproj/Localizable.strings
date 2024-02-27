@@ -68,3 +68,16 @@
 /*ReminderPopupView:*/
 "reminder_added" = "Rappel ajouté";
 "reminder_added_description" = "Rappel ajouté avec succès. Consultez la section des rappels pour voir les rappels.";
+
+/*Stats*/
+"date" = "Date";
+"add_data" = "Ajouter des données";
+"weight" = "Poids";
+"length" = "Longueur";
+"weight_date" = "Poids/ Date";
+"length_date" = "Longueur/ Date";
+"bmi" = "IMC (Indice de masse corporelle)";
+"bmi_date" = "IMC/ Date";
+
+/*AddWeightNHeight*/
+"add_weight_height" = "Ajouter Poids & Taille";

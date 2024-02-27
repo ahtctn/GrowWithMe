@@ -8,6 +8,7 @@
 import Foundation
 
 class PhysicalDataViewModel: ObservableObject {
+    @Published var isAddPhysicalDataPresented: Bool = false
     @Published var data = [
         PhysicalDataModel(weight: 4, length: 0.5, date: Date()),
         PhysicalDataModel(weight: 4.2, length: 0.52, date: Date().addingTimeInterval(86400 * 5)),
@@ -33,6 +34,10 @@ class PhysicalDataViewModel: ObservableObject {
     func calculateBMI(weight: Double, height: Double) -> Double {
         guard height > 0 else { return 0 }
         return weight / (height * height)
+    }
+    
+    func presentAddData() {
+        isAddPhysicalDataPresented = true
     }
     
 }

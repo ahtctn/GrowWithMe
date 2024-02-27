@@ -68,3 +68,18 @@
 /*ReminderPopupView*/
 "reminder_added" = "Reminder added";
 "reminder_added_description" = "Reminder added successfully. Check out the reminder section to see the reminders.";
+
+/*Stats*/
+"date" = "Date";
+"add_data" = "Add Data";
+"weight" = "Weight";
+"length" = "Length";
+"weight_date" = "Weight/ Date";
+"length_date" = "Length/ Date";
+"bmi" = "BMI (Body Mass Index)";
+"bmi_date" = "BMI/ Date";
+
+/*AddWeightNHeight*/
+"add_weight_height" = "Add Weight & Height";
+
+

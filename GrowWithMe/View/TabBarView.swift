@@ -16,10 +16,12 @@ struct TabBarView: View {
                     Label("home".localized(), systemImage: "house.fill")
                 }
             StatsView()
+                .environmentObject(PhysicalDataViewModel())
                 .tabItem {
                     Label("stats".localized(), systemImage: "chart.pie.fill")
                 }
             StoryView()
+                .environmentObject(StoryDataViewModel())
                 .tabItem {
                     Label("story".localized(), systemImage: "book.fill")
                 }

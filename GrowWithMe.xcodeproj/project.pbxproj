@@ -24,6 +24,9 @@
 		7B5DF45D2B81305000C69973 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B5DF45F2B81305000C69973 /* Localizable.strings */; };
 		7B5DF4662B81318100C69973 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5DF4652B81318100C69973 /* StringExtension.swift */; };
 		7B5DF4682B81371400C69973 /* baby.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B5DF4672B81371400C69973 /* baby.json */; };
+		7B5E608F2B8CEB560049A241 /* AddDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5E608E2B8CEB560049A241 /* AddDataView.swift */; };
+		7B5E60922B8E21A90049A241 /* StoryDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5E60912B8E21A90049A241 /* StoryDataViewModel.swift */; };
+		7B5E60952B8E23E70049A241 /* story.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B5E60942B8E23E70049A241 /* story.mp3 */; };
 		7B9318842B710B7400DFC9C3 /* AddReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9318832B710B7400DFC9C3 /* AddReminderView.swift */; };
 		7BC8A03F2B6FBDE600F420D9 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8A03E2B6FBDE600F420D9 /* DateFormatter+Extension.swift */; };
 		7BC8A0422B6FBED600F420D9 /* ReminderDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8A0412B6FBED600F420D9 /* ReminderDataViewModel.swift */; };
@@ -79,6 +82,9 @@
 		7B5DF4642B81307800C69973 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7B5DF4652B81318100C69973 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		7B5DF4672B81371400C69973 /* baby.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = baby.json; sourceTree = "<group>"; };
+		7B5E608E2B8CEB560049A241 /* AddDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataView.swift; sourceTree = "<group>"; };
+		7B5E60912B8E21A90049A241 /* StoryDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDataViewModel.swift; sourceTree = "<group>"; };
+		7B5E60942B8E23E70049A241 /* story.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = story.mp3; sourceTree = "<group>"; };
 		7B9318832B710B7400DFC9C3 /* AddReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderView.swift; sourceTree = "<group>"; };
 		7BC8A03E2B6FBDE600F420D9 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 		7BC8A0412B6FBED600F420D9 /* ReminderDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDataViewModel.swift; sourceTree = "<group>"; };
@@ -156,6 +162,7 @@
 				7B3141E82B691C8200993468 /* App */,
 				7BD1D8382B75033B00074008 /* JSONLottieAnimations */,
 				7B3141DE2B691C7C00993468 /* Assets.xcassets */,
+				7B5E60932B8E23CD0049A241 /* AudioFiles */,
 				7B3141E02B691C7C00993468 /* Preview Content */,
 			);
 			path = GrowWithMe;
@@ -198,6 +205,7 @@
 				7BC8A0412B6FBED600F420D9 /* ReminderDataViewModel.swift */,
 				7BD5A2CD2B6FC4E700F2B1BF /* SpecialMomentsDataViewModel.swift */,
 				7BCCFCF52B838137000340DF /* MyChildViewModel.swift */,
+				7B5E60912B8E21A90049A241 /* StoryDataViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -225,6 +233,7 @@
 		7B3141EE2B6920ED00993468 /* StatsView */ = {
 			isa = PBXGroup;
 			children = (
+				7B5E608D2B8CEB470049A241 /* Subviews */,
 				7B3141F32B69211300993468 /* StatsView.swift */,
 			);
 			path = StatsView;
@@ -272,6 +281,22 @@
 				7B5DF45F2B81305000C69973 /* Localizable.strings */,
 			);
 			path = Locals;
+			sourceTree = "<group>";
+		};
+		7B5E608D2B8CEB470049A241 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				7B5E608E2B8CEB560049A241 /* AddDataView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		7B5E60932B8E23CD0049A241 /* AudioFiles */ = {
+			isa = PBXGroup;
+			children = (
+				7B5E60942B8E23E70049A241 /* story.mp3 */,
+			);
+			path = AudioFiles;
 			sourceTree = "<group>";
 		};
 		7BC8A03D2B6FBDD400F420D9 /* Helpers */ = {
@@ -436,6 +461,7 @@
 			files = (
 				7B5DF4682B81371400C69973 /* baby.json in Resources */,
 				7B5DF45D2B81305000C69973 /* Localizable.strings in Resources */,
+				7B5E60952B8E23E70049A241 /* story.mp3 in Resources */,
 				7B3141E22B691C7C00993468 /* Preview Assets.xcassets in Resources */,
 				7B3141DF2B691C7C00993468 /* Assets.xcassets in Resources */,
 			);
@@ -454,6 +480,7 @@
 				7BD1D8372B75032F00074008 /* PaywallView.swift in Sources */,
 				7BCCFCE32B8373DA000340DF /* PaywallContinueButton.swift in Sources */,
 				7BCCFCFB2B839534000340DF /* AddChildView.swift in Sources */,
+				7B5E608F2B8CEB560049A241 /* AddDataView.swift in Sources */,
 				7BCCFCF02B837842000340DF /* SecondCircleView.swift in Sources */,
 				7BCCFCF42B837FAD000340DF /* MyChildDataModel.swift in Sources */,
 				7B3141FE2B692A1400993468 /* MyChildView.swift in Sources */,
@@ -474,6 +501,7 @@
 				7BD5A2CC2B6FC4A700F2B1BF /* SpecialMomentsDataModel.swift in Sources */,
 				7BC8A0472B6FC0B200F420D9 /* ReminderView.swift in Sources */,
 				7BCCFCF62B838137000340DF /* MyChildViewModel.swift in Sources */,
+				7B5E60922B8E21A90049A241 /* StoryDataViewModel.swift in Sources */,
 				7BCCFCDF2B837391000340DF /* PaywallPaymentMethodWantedMost.swift in Sources */,
 				7BC8A0422B6FBED600F420D9 /* ReminderDataViewModel.swift in Sources */,
 				7BD5A2CE2B6FC4E700F2B1BF /* SpecialMomentsDataViewModel.swift in Sources */,

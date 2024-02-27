@@ -69,6 +69,18 @@
 "reminder_added" = "Promemoria Aggiunto";
 "reminder_added_description" = "Promemoria aggiunto con successo. Controlla la sezione promemoria per vedere i promemoria.";
 
+/*Stats*/
+"date" = "Data";
+"add_data" = "Aggiungi Dati";
+"weight" = "Peso";
+"length" = "Altezza";
+"weight_date" = "Peso/ Data";
+"length_date" = "Altezza/ Data";
+"bmi" = "BMI (Indice di Massa Corporea)";
+"bmi_date" = "BMI/ Data";
+
+/*AddWeightNHeight*/
+"add_weight_height" = "Aggiungi Peso & Altezza";
 
 
 

@@ -68,3 +68,16 @@
 //ReminderPopupView:
 "reminder_added" = "Recordatorio agregado";
 "reminder_added_description" = "Recordatorio agregado exitosamente. Verifica la sección de recordatorios para ver los recordatorios.";
+
+/*Stats*/
+"date" = "Fecha";
+"add_data" = "Agregar Datos";
+"weight" = "Peso";
+"length" = "Altura";
+"weight_date" = "Peso/ Fecha";
+"length_date" = "Altura/ Fecha";
+"bmi" = "IMC (Índice de Masa Corporal)";
+"bmi_date" = "IMC/ Fecha";
+
+/*AddWeightNHeight*/
+"add_weight_height" = "Agregar Peso y Altura";

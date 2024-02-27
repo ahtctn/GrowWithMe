@@ -9,36 +9,36 @@ import SwiftUI
 import Charts
 
 struct StatsView: View {
-    @ObservedObject var viewModel = PhysicalDataViewModel()
+    @EnvironmentObject var physicalDataVM: PhysicalDataViewModel
     @State private var isAddDataButtonTapped: Bool = false
+    @State private var isSheetPresented: Bool = false
+    
     
     var sortedData: [PhysicalDataModel] {
-        return viewModel.data.sorted(by: { $0.weight > $1.weight })
+        return physicalDataVM.data.sorted(by: { $0.weight > $1.weight })
     }
     
     var body: some View {
         NavigationStack {
             List {
-                Section("Weight") {
+                Section("weight".localized()) {
                     Chart {
                         ForEach(sortedData.prefix(12)) { data in
-                            LineMark(x: PlottableValue.value("Date", data.date), y: .value("Weight","\( data.weight) kg"))
-                                .symbol(by: .value("Weight", "Weight/ Date"))
+                            LineMark(x: PlottableValue.value("date".localized(), data.date), y: .value("weight".localized(),"\( data.weight) kg"))
+                                .symbol(by: .value("weight".localized(), "weight_date".localized()))
                                 .lineStyle(StrokeStyle(lineWidth: 4, dash: [10, 10]))
                         }
                     }
-                    
                     .padding()
                     .frame(height: 300)
-                    
                 }
                 
-                Section("Length") {
+                Section("length".localized()) {
                     Chart {
                         ForEach(sortedData.prefix(12)) { data in
-                            LineMark(x: PlottableValue.value("Date", data.date),
-                                     y: .value("Length", "\(data.length)m"))
-                            .symbol(by: .value("Length", "Length/ Date"))
+                            LineMark(x: PlottableValue.value("date".localized(), data.date),
+                                     y: .value("length".localized(), "\(data.length)m"))
+                            .symbol(by: .value("length".localized(), "length_date".localized()))
                             .lineStyle(StrokeStyle(lineWidth: 4, dash: [10, 10]))
                             
                         }
@@ -48,13 +48,13 @@ struct StatsView: View {
                     
                 }
                 
-                Section("BMI") {
+                Section("bmi".localized()) {
                     Chart {
                         ForEach(sortedData.prefix(12)) { data in
-                            let bmi = viewModel.calculateBMI(weight: data.weight, height: data.length)
+                            let bmi = physicalDataVM.calculateBMI(weight: data.weight, height: data.length)
                             
-                            LineMark(x: PlottableValue.value("Date", data.date), y: .value("BMI", String(format: "%.2f", bmi)))
-                                .symbol(by: .value("BMI", "BMI/ Date"))
+                            LineMark(x: PlottableValue.value("date".localized(), data.date), y: .value("bmi".localized(), String(format: "%.2f", bmi)))
+                                .symbol(by: .value("bmi".localized(), "bmi_date".localized()))
                                 .lineStyle(StrokeStyle(lineWidth: 4, dash: [10, 10]))
                             
                             
@@ -64,21 +64,24 @@ struct StatsView: View {
                     .frame(height: 300)
                 }
                 
-                .sheet(isPresented: $isAddDataButtonTapped){
-                    AddDataView(dismiss: {isAddDataButtonTapped = false})
+                .sheet(isPresented: $isSheetPresented){
+                    AddDataView(dismiss: {
+                        isSheetPresented = false
+                    })
                         .presentationDetents([.fraction(0.4)])
                 }
-                
-                
-                
             }
             .navigationTitle("stats".localized())
             .navigationBarItems(
+                
                 trailing:
                     Button {
-                        isAddDataButtonTapped.toggle()
+                        //physicalDataVM.presentAddData()
+                        isSheetPresented = true
+                        
+                        print("\(isSheetPresented) Is Sheet Presented?")
                     } label: {
-                        Text("Add Data")
+                        Text("add_data".localized())
                     }
             )
         }
@@ -90,9 +93,18 @@ struct StatsView: View {
     StatsView()
 }
 
-struct AddDataView: View {
-    var dismiss: () -> Void
+
+struct SheetView: View {
+    @Environment(\.presentationMode) var presentationMode
+
     var body: some View {
-        Text("Add Data button tapped")
+        VStack {
+            Text("This is a sheet")
+            Button("Close") {
+                // Close the sheet
+                presentationMode.wrappedValue.dismiss()
+            }
+        }
+        .padding()
     }
 }

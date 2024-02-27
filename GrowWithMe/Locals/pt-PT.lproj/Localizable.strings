@@ -68,3 +68,16 @@
 /*ReminderPopupView:*/
 "reminder_added" = "Lembrete adicionado";
 "reminder_added_description" = "Lembrete adicionado com sucesso. Verifique a seção de lembretes para ver os lembretes.";
+
+/*Stats*/
+"date" = "Data";
+"add_data" = "Adicionar Dados";
+"weight" = "Peso";
+"length" = "Altura";
+"weight_date" = "Peso/ Data";
+"length_date" = "Altura/ Data";
+"bmi" = "IMC (Índice de Massa Corporal)";
+"bmi_date" = "IMC/ Data";
+
+/*AddWeightNHeight*/
+"add_weight_height" = "Adicionar Peso & Altura";

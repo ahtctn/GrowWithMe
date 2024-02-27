@@ -69,3 +69,16 @@
 /*ReminderPopupView*/
 "reminder_added" = "Anımsatıcı eklendi.";
 "reminder_added_description" = "Anımsatıcı başarıyla eklendi. Anımsatıcılarınızı kontrol ediniz.";
+
+/*Stats*/
+"date" = "Tarih";
+"add_data" = "Veri ekle";
+"weight" = "Ağırlık";
+"length" = "Yükseklik";
+"weight_date" = "Ağırlık/ Tarih";
+"length_date" = "Yükseklik/ Tarih";
+"bmi" = "VKİ (Vücut Kütle Endeksi)";
+"bmi_date" = "VKİ/ Tarih";
+
+/*AddWeightNHeight*/
+"add_weight_height" = "Yükseklik & Ağırlık Ekle";
