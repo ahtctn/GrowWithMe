@@ -38,7 +38,9 @@ struct StoryView: View {
                         .resizable()
                         .scaledToFill()
                         .frame(height: 390)
-                        
+                    //    .blendMode(.difference)
+                        //.blendMode(.darken)
+                        .blendMode(.plusLighter)
                         .ignoresSafeArea()
                     
                 }
