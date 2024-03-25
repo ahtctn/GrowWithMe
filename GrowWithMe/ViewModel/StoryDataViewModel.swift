@@ -11,7 +11,15 @@ import AVFAudio
 class StoryDataViewModel: ObservableObject {
     var audioPlayer: AVAudioPlayer?
     @Published var playbackState: PlaybackState = .stopped
-
+    
+    var audioDuration: TimeInterval {
+        return audioPlayer?.duration ?? 0
+    }
+    var currentPlaybackTime: TimeInterval {
+        return audioPlayer?.currentTime ?? 0
+    }
+    
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     // Dosyayı çal
     func playAudio(fileName: String) {
@@ -43,6 +51,8 @@ class StoryDataViewModel: ObservableObject {
         } else {
             player.currentTime = player.duration
         }
+        print("Current playcackTime\(currentPlaybackTime)")
+        print("Audio Duration\(audioDuration)")
     }
     
     // Belirli bir süreye geri sarma

@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct TimerButtonView: View {
+    var imageStyle: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Image(systemName: imageStyle)
+            // Play simgesi
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 40, height: 40)
+                .foregroundColor(.orange) // Play simgesinin rengi
+            
+            Circle()
+                .foregroundStyle(.orange.opacity(0.5))
+                .frame(width: 75, height: 75, alignment: .center)
+        }
     }
 }
 
 #Preview {
-    TimerButtonView()
+    TimerButtonView(imageStyle: "gece")
 }

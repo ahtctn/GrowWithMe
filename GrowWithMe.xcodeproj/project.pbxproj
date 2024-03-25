@@ -27,6 +27,11 @@
 		7B5E608F2B8CEB560049A241 /* AddDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5E608E2B8CEB560049A241 /* AddDataView.swift */; };
 		7B5E60922B8E21A90049A241 /* StoryDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5E60912B8E21A90049A241 /* StoryDataViewModel.swift */; };
 		7B5E60952B8E23E70049A241 /* story.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B5E60942B8E23E70049A241 /* story.mp3 */; };
+		7B6B2A452BB1A1B80085CF45 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B2A442BB1A1B80085CF45 /* CircularProgressView.swift */; };
+		7B6B2A482BB1A6A60085CF45 /* PlayButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B2A472BB1A6A60085CF45 /* PlayButtonView.swift */; };
+		7B6B2A4A2BB1A6E20085CF45 /* TimerButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B2A492BB1A6E20085CF45 /* TimerButtonView.swift */; };
+		7B6B2A4C2BB1A7160085CF45 /* TimerForwardBackwardTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B2A4B2BB1A7160085CF45 /* TimerForwardBackwardTextView.swift */; };
+		7B6B2A4E2BB1A7520085CF45 /* ButtonActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B2A4D2BB1A7520085CF45 /* ButtonActionView.swift */; };
 		7B9318842B710B7400DFC9C3 /* AddReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9318832B710B7400DFC9C3 /* AddReminderView.swift */; };
 		7BC8A03F2B6FBDE600F420D9 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8A03E2B6FBDE600F420D9 /* DateFormatter+Extension.swift */; };
 		7BC8A0422B6FBED600F420D9 /* ReminderDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8A0412B6FBED600F420D9 /* ReminderDataViewModel.swift */; };
@@ -85,6 +90,11 @@
 		7B5E608E2B8CEB560049A241 /* AddDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataView.swift; sourceTree = "<group>"; };
 		7B5E60912B8E21A90049A241 /* StoryDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDataViewModel.swift; sourceTree = "<group>"; };
 		7B5E60942B8E23E70049A241 /* story.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = story.mp3; sourceTree = "<group>"; };
+		7B6B2A442BB1A1B80085CF45 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		7B6B2A472BB1A6A60085CF45 /* PlayButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButtonView.swift; sourceTree = "<group>"; };
+		7B6B2A492BB1A6E20085CF45 /* TimerButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButtonView.swift; sourceTree = "<group>"; };
+		7B6B2A4B2BB1A7160085CF45 /* TimerForwardBackwardTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerForwardBackwardTextView.swift; sourceTree = "<group>"; };
+		7B6B2A4D2BB1A7520085CF45 /* ButtonActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonActionView.swift; sourceTree = "<group>"; };
 		7B9318832B710B7400DFC9C3 /* AddReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderView.swift; sourceTree = "<group>"; };
 		7BC8A03E2B6FBDE600F420D9 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 		7BC8A0412B6FBED600F420D9 /* ReminderDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDataViewModel.swift; sourceTree = "<group>"; };
@@ -250,6 +260,7 @@
 		7B3141F82B6924A900993468 /* StoryView */ = {
 			isa = PBXGroup;
 			children = (
+				7B6B2A432BB1A1AC0085CF45 /* Subviews */,
 				7B3141F92B6924B500993468 /* StoryView.swift */,
 			);
 			path = StoryView;
@@ -297,6 +308,18 @@
 				7B5E60942B8E23E70049A241 /* story.mp3 */,
 			);
 			path = AudioFiles;
+			sourceTree = "<group>";
+		};
+		7B6B2A432BB1A1AC0085CF45 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				7B6B2A442BB1A1B80085CF45 /* CircularProgressView.swift */,
+				7B6B2A472BB1A6A60085CF45 /* PlayButtonView.swift */,
+				7B6B2A4B2BB1A7160085CF45 /* TimerForwardBackwardTextView.swift */,
+				7B6B2A492BB1A6E20085CF45 /* TimerButtonView.swift */,
+				7B6B2A4D2BB1A7520085CF45 /* ButtonActionView.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 		7BC8A03D2B6FBDD400F420D9 /* Helpers */ = {
@@ -480,10 +503,12 @@
 				7BD1D8372B75032F00074008 /* PaywallView.swift in Sources */,
 				7BCCFCE32B8373DA000340DF /* PaywallContinueButton.swift in Sources */,
 				7BCCFCFB2B839534000340DF /* AddChildView.swift in Sources */,
+				7B6B2A4E2BB1A7520085CF45 /* ButtonActionView.swift in Sources */,
 				7B5E608F2B8CEB560049A241 /* AddDataView.swift in Sources */,
 				7BCCFCF02B837842000340DF /* SecondCircleView.swift in Sources */,
 				7BCCFCF42B837FAD000340DF /* MyChildDataModel.swift in Sources */,
 				7B3141FE2B692A1400993468 /* MyChildView.swift in Sources */,
+				7B6B2A452BB1A1B80085CF45 /* CircularProgressView.swift in Sources */,
 				7BCCFCE92B8374BA000340DF /* AllAdvantagesView.swift in Sources */,
 				7BD5A2CA2B6FC2C800F2B1BF /* RemindersCellView.swift in Sources */,
 				7B3141FA2B6924B500993468 /* StoryView.swift in Sources */,
@@ -507,6 +532,7 @@
 				7BD5A2CE2B6FC4E700F2B1BF /* SpecialMomentsDataViewModel.swift in Sources */,
 				7B3141F12B69210100993468 /* HomeView.swift in Sources */,
 				7BCCFCDC2B837366000340DF /* AdvantagesView.swift in Sources */,
+				7B6B2A4C2BB1A7160085CF45 /* TimerForwardBackwardTextView.swift in Sources */,
 				7B3141DD2B691C7A00993468 /* TabBarView.swift in Sources */,
 				7B0FF2272B87A40D001279C7 /* PopupView.swift in Sources */,
 				7BC8A03F2B6FBDE600F420D9 /* DateFormatter+Extension.swift in Sources */,
@@ -515,6 +541,8 @@
 				7BCCFCE52B8373F1000340DF /* PaywallTermsButton.swift in Sources */,
 				7BD1D8342B7502B100074008 /* LottieAnimationView.swift in Sources */,
 				7BCCFCEB2B83752E000340DF /* AnimationView.swift in Sources */,
+				7B6B2A4A2BB1A6E20085CF45 /* TimerButtonView.swift in Sources */,
+				7B6B2A482BB1A6A60085CF45 /* PlayButtonView.swift in Sources */,
 				7B9318842B710B7400DFC9C3 /* AddReminderView.swift in Sources */,
 				7BC8A0442B6FBEEF00F420D9 /* ReminderDataModel.swift in Sources */,
 			);
