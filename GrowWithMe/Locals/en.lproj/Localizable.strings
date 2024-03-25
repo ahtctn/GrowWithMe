@@ -82,4 +82,6 @@
 /*AddWeightNHeight*/
 "add_weight_height" = "Add Weight & Height";
 
-
+/*StoryNames*/
+"story_of_the_day" = "Story Of The Day";
+"story_1" = "Do You Know My Name?";

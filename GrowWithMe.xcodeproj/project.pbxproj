@@ -32,6 +32,9 @@
 		7B6B2A4A2BB1A6E20085CF45 /* TimerButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B2A492BB1A6E20085CF45 /* TimerButtonView.swift */; };
 		7B6B2A4C2BB1A7160085CF45 /* TimerForwardBackwardTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B2A4B2BB1A7160085CF45 /* TimerForwardBackwardTextView.swift */; };
 		7B6B2A4E2BB1A7520085CF45 /* ButtonActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B2A4D2BB1A7520085CF45 /* ButtonActionView.swift */; };
+		7B6B2A502BB1AC2B0085CF45 /* ScreenBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B2A4F2BB1AC2B0085CF45 /* ScreenBackgroundView.swift */; };
+		7B6B2A532BB1BC780085CF45 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6B2A522BB1BC780085CF45 /* Launch Screen.storyboard */; };
+		7B6B2A552BB1C4D30085CF45 /* StoryImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B2A542BB1C4D30085CF45 /* StoryImageView.swift */; };
 		7B9318842B710B7400DFC9C3 /* AddReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9318832B710B7400DFC9C3 /* AddReminderView.swift */; };
 		7BC8A03F2B6FBDE600F420D9 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8A03E2B6FBDE600F420D9 /* DateFormatter+Extension.swift */; };
 		7BC8A0422B6FBED600F420D9 /* ReminderDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8A0412B6FBED600F420D9 /* ReminderDataViewModel.swift */; };
@@ -65,7 +68,7 @@
 
 /* Begin PBXFileReference section */
 		7B0FF2262B87A40D001279C7 /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
-		7B3141D72B691C7A00993468 /* GrowWithMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrowWithMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B3141D72B691C7A00993468 /* GroWMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroWMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B3141DA2B691C7A00993468 /* GrowWithMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowWithMeApp.swift; sourceTree = "<group>"; };
 		7B3141DC2B691C7A00993468 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		7B3141DE2B691C7C00993468 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,6 +98,10 @@
 		7B6B2A492BB1A6E20085CF45 /* TimerButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButtonView.swift; sourceTree = "<group>"; };
 		7B6B2A4B2BB1A7160085CF45 /* TimerForwardBackwardTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerForwardBackwardTextView.swift; sourceTree = "<group>"; };
 		7B6B2A4D2BB1A7520085CF45 /* ButtonActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonActionView.swift; sourceTree = "<group>"; };
+		7B6B2A4F2BB1AC2B0085CF45 /* ScreenBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenBackgroundView.swift; sourceTree = "<group>"; };
+		7B6B2A512BB1B5F00085CF45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7B6B2A522BB1BC780085CF45 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		7B6B2A542BB1C4D30085CF45 /* StoryImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryImageView.swift; sourceTree = "<group>"; };
 		7B9318832B710B7400DFC9C3 /* AddReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderView.swift; sourceTree = "<group>"; };
 		7BC8A03E2B6FBDE600F420D9 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 		7BC8A0412B6FBED600F420D9 /* ReminderDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDataViewModel.swift; sourceTree = "<group>"; };
@@ -156,7 +163,7 @@
 		7B3141D82B691C7A00993468 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B3141D72B691C7A00993468 /* GrowWithMe.app */,
+				7B3141D72B691C7A00993468 /* GroWMe.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,6 +171,7 @@
 		7B3141D92B691C7A00993468 /* GrowWithMe */ = {
 			isa = PBXGroup;
 			children = (
+				7B6B2A512BB1B5F00085CF45 /* Info.plist */,
 				7B5DF45A2B812FF600C69973 /* Locals */,
 				7BC8A03D2B6FBDD400F420D9 /* Helpers */,
 				7B3141EB2B691C8E00993468 /* Model */,
@@ -204,6 +212,7 @@
 				7B3141F82B6924A900993468 /* StoryView */,
 				7B3141EF2B6920F200993468 /* SettingsView */,
 				7B3141DC2B691C7A00993468 /* TabBarView.swift */,
+				7B6B2A522BB1BC780085CF45 /* Launch Screen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -318,6 +327,8 @@
 				7B6B2A4B2BB1A7160085CF45 /* TimerForwardBackwardTextView.swift */,
 				7B6B2A492BB1A6E20085CF45 /* TimerButtonView.swift */,
 				7B6B2A4D2BB1A7520085CF45 /* ButtonActionView.swift */,
+				7B6B2A4F2BB1AC2B0085CF45 /* ScreenBackgroundView.swift */,
+				7B6B2A542BB1C4D30085CF45 /* StoryImageView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -433,7 +444,7 @@
 				7BD1D8302B7502A000074008 /* Lottie */,
 			);
 			productName = GrowWithMe;
-			productReference = 7B3141D72B691C7A00993468 /* GrowWithMe.app */;
+			productReference = 7B3141D72B691C7A00993468 /* GroWMe.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -482,6 +493,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B6B2A532BB1BC780085CF45 /* Launch Screen.storyboard in Resources */,
 				7B5DF4682B81371400C69973 /* baby.json in Resources */,
 				7B5DF45D2B81305000C69973 /* Localizable.strings in Resources */,
 				7B5E60952B8E23E70049A241 /* story.mp3 in Resources */,
@@ -516,6 +528,7 @@
 				7BD5A2D12B6FC8F000F2B1BF /* SpecialMomentsView.swift in Sources */,
 				7B5DF4662B81318100C69973 /* StringExtension.swift in Sources */,
 				7BCCFCF22B837856000340DF /* ThirdCircleView.swift in Sources */,
+				7B6B2A502BB1AC2B0085CF45 /* ScreenBackgroundView.swift in Sources */,
 				7B3142002B692D1100993468 /* PhysicalDataModel.swift in Sources */,
 				7B5C96C62B73DDA9005B125C /* SpecialMomentDetailView.swift in Sources */,
 				7BD5A2D32B6FC94E00F2B1BF /* SpecialMomentsCellView.swift in Sources */,
@@ -538,6 +551,7 @@
 				7BC8A03F2B6FBDE600F420D9 /* DateFormatter+Extension.swift in Sources */,
 				7BC8A0492B6FC0ED00F420D9 /* CheckboxView.swift in Sources */,
 				7B3141DB2B691C7A00993468 /* GrowWithMeApp.swift in Sources */,
+				7B6B2A552BB1C4D30085CF45 /* StoryImageView.swift in Sources */,
 				7BCCFCE52B8373F1000340DF /* PaywallTermsButton.swift in Sources */,
 				7BD1D8342B7502B100074008 /* LottieAnimationView.swift in Sources */,
 				7BCCFCEB2B83752E000340DF /* AnimationView.swift in Sources */,
@@ -697,9 +711,11 @@
 				DEVELOPMENT_TEAM = KTK732WRHB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GrowWithMe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -708,7 +724,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.allymationes.GrowWithMe;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GroWMe;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -726,9 +742,11 @@
 				DEVELOPMENT_TEAM = KTK732WRHB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GrowWithMe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -737,7 +755,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.allymationes.GrowWithMe;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GroWMe;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

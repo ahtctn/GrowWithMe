@@ -31,7 +31,6 @@ struct PaywallPaymentMethodWantedMost: View {
                                 
                             Text(price)
                                 .padding(.leading, 14)
-                                //.foregroundColor(Color("launchScreenColor"))
                                 .font(.custom("SFProText", size: 14))
                                 .fontWeight(.bold)
                         }

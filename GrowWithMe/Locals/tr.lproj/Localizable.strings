@@ -82,3 +82,7 @@
 
 /*AddWeightNHeight*/
 "add_weight_height" = "Yükseklik & Ağırlık Ekle";
+
+/*StoryNames*/
+"story_of_the_day" = "Günün Hikayesi";
+"story_1" = "Adımı Biliyor Musunuz?";

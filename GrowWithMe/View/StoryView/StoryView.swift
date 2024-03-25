@@ -20,14 +20,19 @@ struct StoryView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                LinearGradient(gradient: Gradient(colors: [Color("darkBlueColor"), Color("lightBlueColor")]), startPoint: .center, endPoint: .top)
-                    .ignoresSafeArea(.all, edges: .top)
-                
-                VStack {
-                    Spacer()
-                    Spacer()
+                ScreenBackgroundView()
+                VStack(spacing: 10) {
+                    StoryImageView(imageName: "gece")
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("story_1".localized())
+                            .font(.title)
+                            .bold()
+                        
+                        Text("story_of_the_day".localized())
+                    }
+                    
                     ZStack {
-                        CircularProgressView(circleWidth: 150, circleHeight: 150, progress: $progress)
+                        CircularProgressView(circleWidth: 130, circleHeight: 130, progress: $progress)
                         ButtonActionView(
                             backwardAction: {
                                 print("backwardbuttontapped")
@@ -45,22 +50,13 @@ struct StoryView: View {
                             }, isBackwardTapped: $isBackwardTapped, isForwardTapped: $isForwardTapped)
                     }
                     
-                    Spacer()
-                    Image("gece")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(height: 390)
-                    //    .blendMode(.difference)
-                        //.blendMode(.darken)
-                        .blendMode(.plusLighter)
-                        .ignoresSafeArea()
-                    
                 }
             }
             
             .navigationTitle("story".localized())
-            .foregroundStyle(.red)
-            .foregroundColor(.red)
+            
+            
+            
             .onReceive(storyDataVM.timer) { _ in
                 if storyDataVM.audioDuration > 0 {
                     progress = min(1.0, max(0.0, storyDataVM.currentPlaybackTime / storyDataVM.audioDuration))

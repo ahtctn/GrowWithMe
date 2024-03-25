@@ -15,7 +15,7 @@ struct ButtonActionView: View {
     @Binding var isBackwardTapped: Bool
     @Binding var isForwardTapped: Bool
     var body: some View {
-        HStack {
+        HStack(spacing: 32) {
             //MARK: BackwardView
             VStack {
                 TimerForwardBackwardTextView(isBackwardORForwardTapped: $isBackwardTapped, textSecond: "-10")
@@ -45,11 +45,11 @@ struct ButtonActionView: View {
                 }
             } label: {
                 if storyDataVM.playbackState == .playing {
-                    PlayButtonView(symbolImage: "pause.circle.fill", circleWidth: 150, circleHeight: 150, innerCircleWidth: 100, innerCircleHeight: 100)
+                    PlayButtonView(symbolImage: "pause.circle.fill", circleWidth: 130, circleHeight: 130, innerCircleWidth: 100, innerCircleHeight: 100)
                 } else if storyDataVM.playbackState == .paused {
-                    PlayButtonView(symbolImage: "play.circle.fill", circleWidth: 150, circleHeight: 150, innerCircleWidth: 100, innerCircleHeight: 100)
+                    PlayButtonView(symbolImage: "play.circle.fill", circleWidth: 130, circleHeight: 130, innerCircleWidth: 100, innerCircleHeight: 100)
                 } else if storyDataVM.playbackState == .stopped {
-                    PlayButtonView(symbolImage: "play.circle.fill", circleWidth: 150, circleHeight: 150, innerCircleWidth: 100, innerCircleHeight: 100)
+                    PlayButtonView(symbolImage: "play.circle.fill", circleWidth: 130, circleHeight: 130, innerCircleWidth: 100, innerCircleHeight: 100)
                 }
             }
             

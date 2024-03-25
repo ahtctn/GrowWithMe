@@ -15,12 +15,12 @@ struct TimerButtonView: View {
             // Play simgesi
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 40, height: 40)
+                .frame(width: 45, height: 45)
                 .foregroundColor(.orange) // Play simgesinin rengi
             
             Circle()
                 .foregroundStyle(.orange.opacity(0.5))
-                .frame(width: 75, height: 75, alignment: .center)
+                .frame(width: 55, height: 55, alignment: .center)
         }
     }
 }
